@@ -53,10 +53,8 @@ export default function Services() {
               onMouseLeave={() => setHoveredService(null)}
               className={`group flex flex-col md:flex-row md:items-center justify-between py-10 px-6 border-b border-neutral-300 dark:border-neutral-800 transition-all duration-300 cursor-pointer ${hoveredService === service.id ? "bg-yellow-500 px-10" : "hover:bg-yellow-500 hover:px-10"}`}
             >
-              <div className="flex items-center gap-8 md:w-2/3">
-                <span className="text-3xl font-light font-serif italic text-neutral-400 dark:text-neutral-600 group-hover:text-black transition-colors">
-                  0{service.id}
-                </span>
+              {/* Removed the numbering span and gap entirely */}
+              <div className="flex items-center md:w-2/3">
                 <h3 className="text-3xl sm:text-4xl font-black text-neutral-900 dark:text-neutral-200 group-hover:text-black transition-colors uppercase">
                   {service.title}
                 </h3>
