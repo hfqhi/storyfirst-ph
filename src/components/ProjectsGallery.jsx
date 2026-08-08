@@ -56,7 +56,7 @@ export default function ProjectsGallery() {
                 alt={project.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <span className="absolute top-3 left-3 bg-black/90 text-yellow-500 text-xs font-mono px-2 py-1 font-bold">
+              <span className="absolute top-4 left-4 bg-black text-yellow-500 text-[10px] font-black tracking-[0.2em] uppercase px-3 py-2">
                 {project.category}
               </span>
             </div>
