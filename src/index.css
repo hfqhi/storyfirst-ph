@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-@layer base {
-  body {
-    @apply transition-colors duration-500 ease-in-out;
-  }
-}
-
 .texture-overlay {
   position: fixed;
   top: 0;
@@ -21,6 +15,7 @@
   mix-blend-mode: multiply;
 }
 
+/* Dark Mode Texture Adjustments */
 .dark .texture-overlay {
   opacity: 0.15;
   mix-blend-mode: overlay;
