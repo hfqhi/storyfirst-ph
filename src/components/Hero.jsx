@@ -15,10 +15,10 @@ export default function Hero() {
         className="space-y-6"
       >
         <p className="text-yellow-500 text-xs font-black tracking-[0.2em] uppercase mb-4">
-          Media & Communications Organization
+          // Media & Communications Organization
         </p>
 
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-neutral-950 dark:text-white uppercase leading-[0.9]">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight text-neutral-950 dark:text-white uppercase leading-[0.9]">
           {identityData.tagline}
           <br />
           <span className="inline-block bg-yellow-500 text-black px-4 pt-3 pb-1 mt-3 font-black tracking-tight">
