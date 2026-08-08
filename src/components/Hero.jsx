@@ -14,14 +14,14 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="space-y-6"
       >
-        <p className="text-yellow-400 font-mono tracking-widest uppercase text-sm font-semibold">
+        <p className="text-yellow-500 font-mono tracking-widest uppercase text-sm font-semibold">
           // Media & Communications Organization
         </p>
 
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white uppercase leading-none">
           {identityData.tagline}
           <br />
-          <span className="inline-block bg-yellow-400 text-black px-3 py-1 mt-3 font-black">
+          <span className="inline-block bg-yellow-500 text-black px-3 py-1 mt-3 font-black">
             {identityData.subTagline}
           </span>
         </h1>
@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="pt-6 flex flex-wrap gap-4">
           <a
             href="#work"
-            className="bg-yellow-400 hover:bg-yellow-300 text-black font-extrabold uppercase px-8 py-4 text-sm tracking-wider transition-transform active:scale-95"
+            className="bg-yellow-500 hover:bg-yellow-300 text-black font-extrabold uppercase px-8 py-4 text-sm tracking-wider transition-transform active:scale-95"
           >
             Explore Our Work
           </a>
@@ -51,14 +51,14 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        className="mt-20 p-8 border-l-4 border-yellow-400 bg-neutral-900/50 rounded-r-lg"
+        className="mt-20 p-8 border-l-4 border-yellow-500 bg-neutral-900/50 rounded-r-lg"
       >
-        <span className="text-5xl text-yellow-400 font-serif leading-none block mb-2">
+        <span className="text-5xl text-yellow-500 font-serif leading-none block mb-2">
           “
         </span>
         <blockquote className="text-xl sm:text-2xl font-bold italic text-neutral-200">
           Documentary is not about showing everything.
-          <span className="block mt-2 bg-yellow-400 text-black px-2 py-1 not-italic w-fit font-black">
+          <span className="block mt-2 bg-yellow-500 text-black px-2 py-1 not-italic w-fit font-black">
             It's about showing EVERYTHING that matters.
           </span>
         </blockquote>

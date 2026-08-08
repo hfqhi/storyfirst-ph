@@ -8,7 +8,7 @@ export default function Contact() {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
-          <span className="bg-yellow-400 text-black uppercase font-black px-3 py-1 text-sm tracking-widest inline-block mb-3">
+          <span className="bg-yellow-500 text-black uppercase font-black px-3 py-1 text-sm tracking-widest inline-block mb-3">
             Get In Touch
           </span>
           <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
@@ -21,11 +21,11 @@ export default function Contact() {
 
           <div className="mt-8 space-y-4 text-sm font-mono text-neutral-300">
             <p>
-              <span className="text-yellow-400 font-bold">EMAIL:</span>{" "}
+              <span className="text-yellow-500 font-bold">EMAIL:</span>{" "}
               contact@storyfirst.ph
             </p>
             <p>
-              <span className="text-yellow-400 font-bold">LOCATION:</span>{" "}
+              <span className="text-yellow-500 font-bold">LOCATION:</span>{" "}
               Philippines
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Your Full Name"
-              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-400"
+              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-500"
             />
           </div>
           <div>
@@ -53,7 +53,7 @@ export default function Contact() {
             <input
               type="email"
               placeholder="your@email.com"
-              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-400"
+              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-500"
             />
           </div>
           <div>
@@ -63,12 +63,12 @@ export default function Contact() {
             <textarea
               rows="4"
               placeholder="Tell us about your project..."
-              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-400 resize-none"
+              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-500 resize-none"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-extrabold uppercase py-4 text-sm tracking-wider transition-colors"
+            className="w-full bg-yellow-500 hover:bg-yellow-300 text-black font-extrabold uppercase py-4 text-sm tracking-wider transition-colors"
           >
             Send Message
           </button>

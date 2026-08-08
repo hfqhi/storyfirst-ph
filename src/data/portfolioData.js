@@ -11,76 +11,129 @@ export const identityData = {
 export const servicesData = [
   {
     id: 1,
-    title: "Directing",
+    title: "Documentary Production",
     description:
-      "Creative and editorial vision for documentaries and multimedia stories.",
+      "End-to-end editorial vision, field producing, and directing for television, film, and online documentaries.",
+    visualType: "video",
+    mediaUrl:
+      "https://cdn.pixabay.com/video/2020/05/24/40061-425553655_tiny.mp4",
   },
   {
     id: 2,
-    title: "Research & Fixing",
+    title: "Investigative Research & Fixing",
     description:
-      "On-the-ground investigative research, archival sourcing, and local fixing.",
+      "On-the-ground research, news fixing, and segment producing for international and local news agencies.",
+    visualType: "image",
+    mediaUrl:
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
-    title: "Scriptwriting",
+    title: "Post-Production & Manipulation",
     description:
-      "Narrative structuring, interview translation, and compelling voiceover writing.",
-  },
-  {
-    id: 4,
-    title: "Cinematography",
-    description:
-      "High-impact visual capture, field shooting, and documentary lighting.",
-  },
-  {
-    id: 5,
-    title: "Post-Production",
-    description:
-      "Video editing, color grading, sound design, and archival restoration.",
-  },
-  {
-    id: 6,
-    title: "Producing & Hosting",
-    description:
-      "End-to-end field production management and on-camera reporting.",
+      "Edit supervision, scriptwriting, photo manipulation, and narrative structuring to ensure maximum impact.",
+    visualType: "video",
+    mediaUrl:
+      "https://cdn.pixabay.com/video/2019/02/13/21350-317208947_tiny.mp4",
   },
 ];
 
 export const projectsData = [
   {
     id: 1,
-    title: "Voices from the Coast",
-    category: "Documentary",
+    title: "Wombs for Rent",
+    category: "Online Documentary",
+    client: "GMA Network of Philippines",
+    roles: "Reporter, Researcher, Director, Edit Supervisor, Writer",
+    awards:
+      "Winner for Best Investigative Story, 2024 Catholic Mass Media Awards",
     image:
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800",
-    description:
-      "An in-depth look into coastal communities adapting to environmental change.",
-    videoUrl: "#",
+      "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 2,
-    title: "Urban Truths",
-    category: "Journalism",
+    title: "Lost Sabungeros",
+    category: "Film Documentary",
+    client: "GMA Public Affairs & GMA Pictures",
+    roles: "Co-writer and co-director",
+    awards:
+      "NYF Finalist (2025), Asian Academy National Winner, Gawad Urian Nominee",
     image:
-      "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&q=80&w=800",
-    description:
-      "Investigative report on urban mobility and community stories.",
-    videoUrl: "#",
+      "https://images.unsplash.com/photo-1518972554743-bc970ec7d0fb?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
-    title: "Cultural Heritage Series",
-    category: "Culture",
+    title: "Wounds of Woes",
+    category: "Television Documentary",
+    client: "GMA Network of Philippines",
+    roles: "Field Producer, Writer, Edit Supervisor, Director",
+    awards: "Gold Winner, 2023 New York Festivals TV & Film Awards",
     image:
-      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=800",
-    description: "Preserving traditional folk art through visual storytelling.",
-    videoUrl: "#",
+      "https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 4,
+    title: "The Negotiators",
+    category: "Documentary",
+    client: "Channel News Asia of Singapore",
+    roles: "Assistant Producer (PH), News Fixer, Researcher",
+    awards: "Best Current Affairs Programme, 2024 ContentAsia Awards",
+    image:
+      "https://images.unsplash.com/photo-1558459654-c430be5b0a44?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 5,
+    title: "Batas Bata",
+    category: "Television Documentary",
+    client: "GMA Network of Philippines",
+    roles: "Field Producer, Edit Supervisor",
+    awards: "Gold World Medalist, 2024 New York Festivals",
+    image:
+      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 6,
+    title: "Hingang Malalim",
+    category: "Television Documentary",
+    client: "GMA Network of Philippines",
+    roles: "Segment Producer, Edit Supervisor",
+    awards: "Silver World Medalist, 2024 New York Festivals",
+    image:
+      "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 7,
+    title: "Ang Pinanggang Anak ni Julieta",
+    category: "Documentary",
+    client: "Philippine Center for Investigative Journalism",
+    roles: "Director, Writer, Edit Supervisor",
+    awards: "Best Regional Entry, 2021 Gawad Alternatibo",
+    image:
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=800",
   },
 ];
 
 export const partnershipsData = [
-  { name: "Independent Film Guild", type: "Collaborator" },
-  { name: "National Cultural Archive", type: "Research Partner" },
-  { name: "Global Documentary Network", type: "Distributor" },
+  "Universal Robina",
+  "Thomson Reuters",
+  "Miss Universe Philippines",
+  "UNILAB",
+  "SM Seaside City",
+  "DepEd",
+  "DOST",
+  "Enervon",
+  "Selecta",
+  "Arte",
+  "European Union",
+  "McDonald's",
+  "Lazada",
+  "Ajinomoto",
+  "Puregold",
+  "GMA",
+  "ChildFund",
+  "Sault College",
+  "inDrive",
+  "Grab",
+  "Channel NewsAsia",
+  "PCIJ",
 ];
