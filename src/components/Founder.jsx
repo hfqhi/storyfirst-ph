@@ -8,26 +8,27 @@ export default function Founder() {
       className="py-24 bg-neutral-100 dark:bg-neutral-900 transition-colors duration-500 px-6 border-y border-neutral-200 dark:border-neutral-800"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-        <div className="md:col-span-5 relative group">
-          {/* Wrapped the image container in an anchor tag */}
+        <div className="md:col-span-5 relative group pb-8 md:pb-0">
+          {/* Added relative wrapper and adjusted aspect ratio for mobile */}
           <a
-            href="https://www.imdb.com/name/nm10904388/"
+            href="https://www.imdb.com/name/nm16335198/"
             target="_blank"
             rel="noreferrer"
-            className="block aspect-[3/4] overflow-hidden bg-neutral-200 dark:bg-neutral-800 border-4 border-white dark:border-neutral-950 shadow-2xl cursor-pointer"
+            className="block w-full max-w-sm mx-auto md:max-w-none aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-neutral-200 dark:bg-neutral-800 border-4 border-white dark:border-neutral-950 shadow-2xl cursor-pointer rounded-2xl md:rounded-none"
           >
             <img
               src={marcoRomas}
               alt="Marco Romas"
-              className="w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105"
+              className="w-full h-full object-cover object-top transition-transform duration-1000 ease-in-out group-hover:scale-105"
             />
           </a>
-          <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-black font-black uppercase px-6 py-4 text-2xl shadow-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-500 pointer-events-none">
+          {/* Positioned cleanly below the image on mobile, absolute on desktop */}
+          <div className="absolute -bottom-2 right-4 md:-bottom-6 md:-right-6 bg-yellow-500 text-black font-black uppercase px-6 py-3 md:py-4 text-xl md:text-2xl shadow-lg transform rotate-2 md:rotate-3 group-hover:rotate-6 transition-transform duration-500 pointer-events-none">
             Marco Romas
           </div>
         </div>
 
-        <div className="md:col-span-7 space-y-8 md:pl-10 text-neutral-900 dark:text-white transition-colors duration-500">
+        <div className="md:col-span-7 space-y-8 md:pl-10 text-neutral-900 dark:text-white transition-colors duration-500 pt-4 md:pt-0">
           <div>
             <h2 className="text-4xl sm:text-5xl font-black uppercase tracking-tighter leading-none mb-2">
               Impactful Storytelling
