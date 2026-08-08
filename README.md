@@ -1,5 +1,7 @@
 # StoryFirst PH — Practical Exam Portfolio Website
 
+**🌐 Live Site:** [hfqhi.github.io/storyfirst-ph](https://hfqhi.github.io/storyfirst-ph/)
+
 A high-end, responsive digital experience and portfolio website built for **StoryFirst PH**, showcasing cinematic documentaries, event hosting, brand collaborations, and award-winning media productions.
 
 ---
