@@ -12,8 +12,9 @@ export const servicesData = [
     title: "Cinematic Documentaries",
     description:
       "End-to-end editorial vision and direction for high-impact film, television, and digital platforms.",
-    visualType: "image",
-    mediaUrl: "01.jpg",
+    visualType: "video",
+    mediaUrl:
+      "https://cdn.pixabay.com/video/2020/05/24/40061-425553655_tiny.mp4",
   },
   {
     id: 2,
@@ -21,19 +22,22 @@ export const servicesData = [
     description:
       "Deep-dive investigations, local fixing, and precise segment production for global news agencies.",
     visualType: "image",
-    mediaUrl: "02.jpg",
+    mediaUrl:
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
     title: "Post-Production & Narrative Editing",
     description:
       "Precision editing, script structuring, and visual manipulation designed to maximize human impact.",
-    visualType: "image",
-    mediaUrl: "03.jpg",
+    visualType: "video",
+    mediaUrl:
+      "https://cdn.pixabay.com/video/2019/02/13/21350-317208947_tiny.mp4",
   },
 ];
 
 export const projectsData = [
+  // --- DOCUMENTARIES ---
   {
     id: 1,
     title: "Wombs for Rent",
@@ -105,6 +109,87 @@ export const projectsData = [
     awards: "Best Regional Entry, 2021 Gawad Alternatibo",
     image: "ang-pinanggang-anak-ni-julieta.png",
     videoUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
+  },
+
+  // --- HOSTING ---
+  {
+    id: 8,
+    title: "Universal Robina",
+    category: "Hosting",
+    roles: "Host / Presenter",
+    image: "universal-robina.png",
+    videoUrl:
+      "https://www.facebook.com/mac.romas/videos/476702725461880/?rdid=qqNe4XUf6VyEmPsZ#",
+  },
+  {
+    id: 9,
+    title: "Miss Universe Cebu",
+    category: "Hosting",
+    roles: "Event Host",
+    image: "miss-universe-cebu.png",
+    videoUrl: "https://www.facebook.com/mac.romas/videos/976956220556190/?t=4",
+  },
+  {
+    id: 10,
+    title: "Ajinomoto",
+    category: "Hosting",
+    roles: "Host / Content Creator",
+    image: "ajinomoto.png",
+    videoUrl:
+      "https://www.instagram.com/reel/DIG78HqySfg/?utm_source=ig_embed&ig_rid=A7gHG8tbjjI_Bf1spu0m4bw",
+  },
+  {
+    id: 11,
+    title: "Mober",
+    category: "Hosting",
+    roles: "Host / Presenter",
+    image: "mober.png",
+    videoUrl:
+      "https://www.instagram.com/reel/DHadJcRtw4m/?utm_source=ig_embed&ig_rid=ANaeIeN0wtZzPSp8ftswG0e",
+  },
+  {
+    id: 12,
+    title: "Unilab X Rose Pharmacy",
+    category: "Hosting",
+    roles: "Host",
+    image: "unilab-rose-pharmacy.png",
+    videoUrl:
+      "https://www.instagram.com/reel/DBdPS6AOgXp/?utm_source=ig_embed&ig_rid=An0cPpXhiRf3ng_y4zQ2LGi",
+  },
+  {
+    id: 13,
+    title: "Grab",
+    category: "Hosting",
+    roles: "Host",
+    image: "grab.png",
+    videoUrl:
+      "https://www.instagram.com/reel/C6qp5dBtx8p/?utm_source=ig_embed&ig_rid=AazAAQcv36x588ktrKe8q5b",
+  },
+
+  // --- BRANDS ---
+  {
+    id: 14,
+    title: "Lazada",
+    category: "Brands",
+    roles: "Brand Collaboration",
+    image: "lazada.png",
+    videoUrl: "https://www.instagram.com/p/DG-C3WchUD2/",
+  },
+  {
+    id: 15,
+    title: "Enervon",
+    category: "Brands",
+    roles: "Brand Collaboration",
+    image: "enervon.png",
+    videoUrl: "https://www.instagram.com/reel/DF73TjjSYMz/",
+  },
+  {
+    id: 16,
+    title: "Cyberzone",
+    category: "Brands",
+    roles: "Brand Collaboration",
+    image: "cyberzone.png",
+    videoUrl: "https://www.instagram.com/p/DH2sZEcM6te/",
   },
 ];
 

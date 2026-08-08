@@ -15,8 +15,8 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover grayscale opacity-20 dark:opacity-30"
-          src="https://cdn.pixabay.com/video/2019/11/08/28859-370162593_tiny.mp4"
+          className="w-full h-full object-cover grayscale opacity-60 dark:opacity-40"
+          src="storyfirst-clip.mp4"
         />
         <div className="absolute inset-0 bg-white/80 dark:bg-neutral-950/80"></div>
       </div>
