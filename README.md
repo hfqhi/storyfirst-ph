@@ -1,4 +1,4 @@
-# StoryFirst PH — Official Portfolio & Agency Website
+# StoryFirst PH — Practical Exam Portfolio Website
 
 A high-end, responsive digital experience and portfolio website built for **StoryFirst PH**, showcasing cinematic documentaries, event hosting, brand collaborations, and award-winning media productions.
 
@@ -26,7 +26,7 @@ StoryFirst PH is a media and communications organization dedicated to authentic 
 - **Founder Profile:** Showcases Marco Romas's biography, a linked portrait photo, and stylized notable recognitions (International Emmy Nominee, New York Festivals, etc.).
 - **Capabilities (Services):** Interactive list with background image transitions, gradient masks, and smooth yellow gradient hover states.
 - **Featured Projects Gallery:** Fully filterable grid supporting Documentaries, Hosting, and Brands, complete with in-background image hover reveals and direct media links.
-- **Partnerships Marquee:** Infinite horizontal scrolling ticker showcasing brand partners with pause-on-hover functionality.
+- **Partnerships Marquee:** Infinite horizontal scrolling ticker showcasing brand partners.
 - **Contact & Footer Section:** Fully functional inquiry form with success states, auto-clearing input fields, contact details, and optimized social media icons.
 - **Global Theme Engine:** Fully functional Light/Dark mode switcher with persistent visual styling and paper texture overlays.
 
