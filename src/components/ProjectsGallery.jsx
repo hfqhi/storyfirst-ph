@@ -49,7 +49,7 @@ export default function ProjectsGallery() {
             target="_blank"
             rel="noreferrer"
             key={project.id}
-            className="relative group h-[400px] flex flex-col justify-end p-8 overflow-hidden bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-500/10 block"
+            className="relative group h-[400px] flex flex-col justify-end p-8 overflow-hidden bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-neutral-300/50 dark:hover:shadow-yellow-500/5 block"
           >
             {/* In-Background Image Reveal on Hover */}
             <div className="absolute inset-0 z-0">
@@ -72,6 +72,13 @@ export default function ProjectsGallery() {
               <p className="text-neutral-400 text-sm mt-3 group-hover:text-white transition-colors">
                 {project.roles}
               </p>
+
+              {/* Client Info Restored */}
+              {project.client && (
+                <p className="text-neutral-500 text-[10px] font-black tracking-[0.1em] uppercase border-t border-neutral-700 pt-3 mt-4 group-hover:text-neutral-300 transition-colors">
+                  {project.client}
+                </p>
+              )}
             </div>
           </a>
         ))}
