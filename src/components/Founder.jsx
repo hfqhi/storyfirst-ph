@@ -53,28 +53,20 @@ export default function Founder() {
               Notable Recognitions
             </h3>
             <ul className="space-y-6 text-sm sm:text-base font-black tracking-wider uppercase text-neutral-800 dark:text-neutral-200">
-              <li className="flex items-center gap-4">
-                <span className="text-yellow-500 text-xl font-black italic leading-none">
-                  /
-                </span>
+              <li className="flex items-center gap-5">
+                <span className="w-1.5 h-5 bg-yellow-500 -skew-x-12 shrink-0"></span>
                 2025 International Emmy Awards (Nominee)
               </li>
-              <li className="flex items-center gap-4">
-                <span className="text-yellow-500 text-xl font-black italic leading-none">
-                  /
-                </span>
+              <li className="flex items-center gap-5">
+                <span className="w-1.5 h-5 bg-yellow-500 -skew-x-12 shrink-0"></span>
                 New York Festivals TV & Film Awards
               </li>
-              <li className="flex items-center gap-4">
-                <span className="text-yellow-500 text-xl font-black italic leading-none">
-                  /
-                </span>
+              <li className="flex items-center gap-5">
+                <span className="w-1.5 h-5 bg-yellow-500 -skew-x-12 shrink-0"></span>
                 Catholic Mass Media Award
               </li>
-              <li className="flex items-center gap-4">
-                <span className="text-yellow-500 text-xl font-black italic leading-none">
-                  /
-                </span>
+              <li className="flex items-center gap-5">
+                <span className="w-1.5 h-5 bg-yellow-500 -skew-x-12 shrink-0"></span>
                 DIG Awards (Italy) & FIGRA (Paris)
               </li>
             </ul>
