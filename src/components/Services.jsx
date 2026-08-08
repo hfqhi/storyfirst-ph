@@ -7,9 +7,8 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative py-24 bg-transparent border-y border-neutral-200 dark:border-neutral-900 overflow-hidden min-h-[80vh] flex items-center"
+      className="relative py-32 bg-transparent border-y border-neutral-200 dark:border-neutral-900 overflow-hidden min-h-[80vh] flex items-center"
     >
-      {/* Dynamic Background Media */}
       <div className="absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-700 ease-in-out opacity-100">
         {servicesData.map((service) => (
           <div
@@ -46,23 +45,24 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="flex flex-col border-t border-neutral-200 dark:border-neutral-800">
+        {/* Sharper Agency Format */}
+        <div className="flex flex-col border-t border-neutral-300 dark:border-neutral-800">
           {servicesData.map((service) => (
             <div
               key={service.id}
               onMouseEnter={() => setHoveredService(service.id)}
               onMouseLeave={() => setHoveredService(null)}
-              className={`group flex flex-col md:flex-row md:items-center justify-between p-8 border-b border-neutral-200 dark:border-neutral-800 transition-colors cursor-pointer ${hoveredService === service.id ? "bg-yellow-500" : "hover:bg-yellow-500"}`}
+              className={`group flex flex-col md:flex-row md:items-center justify-between py-10 px-6 border-b border-neutral-300 dark:border-neutral-800 transition-all duration-300 cursor-pointer ${hoveredService === service.id ? "bg-yellow-500 px-10" : "hover:bg-yellow-500 hover:px-10"}`}
             >
-              <div className="flex items-center gap-8">
-                <span className="text-3xl font-light font-mono text-neutral-400 dark:text-neutral-600 group-hover:text-black transition-colors">
+              <div className="flex items-center gap-8 md:w-2/3">
+                <span className="text-3xl font-light font-serif italic text-neutral-400 dark:text-neutral-600 group-hover:text-black transition-colors">
                   0{service.id}
                 </span>
-                <h3 className="text-3xl sm:text-4xl font-black text-neutral-900 dark:text-neutral-400 group-hover:text-black transition-colors uppercase">
+                <h3 className="text-3xl sm:text-4xl font-black text-neutral-900 dark:text-neutral-200 group-hover:text-black transition-colors uppercase">
                   {service.title}
                 </h3>
               </div>
-              <p className="text-neutral-600 dark:text-neutral-500 group-hover:text-black/80 text-sm mt-4 md:mt-0 max-w-md leading-relaxed font-medium transition-colors">
+              <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-black/80 text-sm mt-4 md:mt-0 md:w-1/3 leading-relaxed font-medium transition-colors">
                 {service.description}
               </p>
             </div>
