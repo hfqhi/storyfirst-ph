@@ -2,8 +2,6 @@ export const identityData = {
   brandName: "STORYFIRST PH",
   tagline: "REAL STORIES DO NOT NEED TO BE DRAMATIZED",
   subTagline: "THEY NEED TO BE HEARD",
-  quote:
-    "Documentary is not about showing everything. It's about showing EVERYTHING that matters.",
   aboutText:
     "StoryFirst PH is a media and communications organization dedicated to authentic documentary storytelling, investigative journalism, and human-centered visual narratives.",
 };
@@ -47,8 +45,7 @@ export const projectsData = [
     roles: "Reporter, Researcher, Director, Edit Supervisor, Writer",
     awards:
       "Winner for Best Investigative Story, 2024 Catholic Mass Media Awards",
-    image:
-      "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&q=80&w=800",
+    image: "/wombs-for-rent.png",
     videoUrl: "https://www.youtube.com/watch?v=922MzLxNEiA",
   },
   {
@@ -59,8 +56,7 @@ export const projectsData = [
     roles: "Co-writer and co-director",
     awards:
       "NYF Finalist (2025), Asian Academy National Winner, Gawad Urian Nominee",
-    image:
-      "https://images.unsplash.com/photo-1518972554743-bc970ec7d0fb?auto=format&fit=crop&q=80&w=800",
+    image: "/lost-sabungeros.png",
     videoUrl: "https://www.youtube.com/watch?v=Gm9D5sbbDZg",
   },
   {
@@ -70,8 +66,7 @@ export const projectsData = [
     client: "GMA Network of Philippines",
     roles: "Field Producer, Writer, Edit Supervisor, Director",
     awards: "Gold Winner, 2023 New York Festivals TV & Film Awards",
-    image:
-      "https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&q=80&w=800",
+    image: "/wounds-of-woes.png",
     videoUrl: "https://www.youtube.com/watch?v=EuoOZ6zHEDM",
   },
   {
@@ -81,8 +76,7 @@ export const projectsData = [
     client: "Channel News Asia of Singapore",
     roles: "Assistant Producer (PH), News Fixer, Researcher",
     awards: "Best Current Affairs Programme, 2024 ContentAsia Awards",
-    image:
-      "https://images.unsplash.com/photo-1558459654-c430be5b0a44?auto=format&fit=crop&q=80&w=800",
+    image: "/the-negotiators.png",
     videoUrl: "https://www.youtube.com/watch?v=c08GXOLdGWM",
   },
   {
@@ -92,8 +86,7 @@ export const projectsData = [
     client: "GMA Network of Philippines",
     roles: "Field Producer, Edit Supervisor",
     awards: "Gold World Medalist, 2024 New York Festivals",
-    image:
-      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800",
+    image: "/batas-bata.png",
     videoUrl: "https://www.youtube.com/watch?v=rNlYVim_iIk",
   },
   {
@@ -103,8 +96,7 @@ export const projectsData = [
     client: "GMA Network of Philippines",
     roles: "Segment Producer, Edit Supervisor",
     awards: "Silver World Medalist, 2024 New York Festivals",
-    image:
-      "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=800",
+    image: "/hingang-malalim.png",
     videoUrl: "https://www.youtube.com/watch?v=9l3567pGsIA",
   },
   {
@@ -114,8 +106,7 @@ export const projectsData = [
     client: "Philippine Center for Investigative Journalism",
     roles: "Director, Writer, Edit Supervisor",
     awards: "Best Regional Entry, 2021 Gawad Alternatibo",
-    image:
-      "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=800",
+    image: "/ang-pinanggang.png",
     videoUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
   },
 ];
