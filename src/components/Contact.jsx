@@ -19,29 +19,32 @@ export default function Contact() {
             and our team will get back to you promptly.
           </p>
 
-          <div className="mt-8 space-y-4 text-sm font-mono text-neutral-800 dark:text-neutral-200">
-            <p>
-              <span className="text-yellow-600 dark:text-yellow-500 font-bold">
-                EMAIL:
-              </span>{" "}
-              contact@storyfirst.ph
-            </p>
-            <p>
-              <span className="text-yellow-600 dark:text-yellow-500 font-bold">
-                LOCATION:
-              </span>{" "}
-              Philippines
-            </p>
+          <div className="mt-10 space-y-6">
+            <div>
+              <p className="text-yellow-600 dark:text-yellow-500 text-xs font-black tracking-[0.2em] uppercase mb-1">
+                Email
+              </p>
+              <p className="text-neutral-950 dark:text-white font-medium text-lg">
+                contact@storyfirst.ph
+              </p>
+            </div>
+            <div>
+              <p className="text-yellow-600 dark:text-yellow-500 text-xs font-black tracking-[0.2em] uppercase mb-1">
+                Location
+              </p>
+              <p className="text-neutral-950 dark:text-white font-medium text-lg">
+                Philippines
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Contact Form */}
         <form
           onSubmit={(e) => e.preventDefault()}
           className="bg-white dark:bg-neutral-950 p-8 border border-neutral-200 dark:border-neutral-800 space-y-6 shadow-sm"
         >
           <div>
-            <label className="block text-xs uppercase font-bold text-neutral-500 dark:text-neutral-400 mb-2">
+            <label className="block text-xs font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
               Name
             </label>
             <input
@@ -51,7 +54,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-xs uppercase font-bold text-neutral-500 dark:text-neutral-400 mb-2">
+            <label className="block text-xs font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
               Email
             </label>
             <input
@@ -61,7 +64,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-xs uppercase font-bold text-neutral-500 dark:text-neutral-400 mb-2">
+            <label className="block text-xs font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
               Message
             </label>
             <textarea
