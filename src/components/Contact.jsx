@@ -1,0 +1,79 @@
+import React from "react";
+
+export default function Contact() {
+  return (
+    <section
+      id="contact"
+      className="py-20 bg-neutral-900 border-t border-neutral-800 px-6"
+    >
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div>
+          <span className="bg-yellow-400 text-black uppercase font-black px-3 py-1 text-sm tracking-widest inline-block mb-3">
+            Get In Touch
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
+            Let's Tell Your Story
+          </h2>
+          <p className="text-neutral-400 mt-4 leading-relaxed max-w-md">
+            Have a project, collaboration idea, or inquiry? Send us a message
+            and our team will get back to you promptly.
+          </p>
+
+          <div className="mt-8 space-y-4 text-sm font-mono text-neutral-300">
+            <p>
+              <span className="text-yellow-400 font-bold">EMAIL:</span>{" "}
+              contact@storyfirst.ph
+            </p>
+            <p>
+              <span className="text-yellow-400 font-bold">LOCATION:</span>{" "}
+              Philippines
+            </p>
+          </div>
+        </div>
+
+        {/* Contact Form */}
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          className="bg-neutral-950 p-8 border border-neutral-800 space-y-6"
+        >
+          <div>
+            <label className="block text-xs uppercase font-bold text-neutral-400 mb-2">
+              Name
+            </label>
+            <input
+              type="text"
+              placeholder="Your Full Name"
+              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-400"
+            />
+          </div>
+          <div>
+            <label className="block text-xs uppercase font-bold text-neutral-400 mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              placeholder="your@email.com"
+              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-400"
+            />
+          </div>
+          <div>
+            <label className="block text-xs uppercase font-bold text-neutral-400 mb-2">
+              Message
+            </label>
+            <textarea
+              rows="4"
+              placeholder="Tell us about your project..."
+              className="w-full bg-neutral-900 border border-neutral-800 px-4 py-3 text-white text-sm focus:outline-none focus:border-yellow-400 resize-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-extrabold uppercase py-4 text-sm tracking-wider transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+}
