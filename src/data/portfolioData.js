@@ -49,6 +49,7 @@ export const projectsData = [
       "Winner for Best Investigative Story, 2024 Catholic Mass Media Awards",
     image:
       "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&q=80&w=800",
+    videoUrl: "https://www.youtube.com/watch?v=922MzLxNEiA",
   },
   {
     id: 2,
@@ -60,6 +61,7 @@ export const projectsData = [
       "NYF Finalist (2025), Asian Academy National Winner, Gawad Urian Nominee",
     image:
       "https://images.unsplash.com/photo-1518972554743-bc970ec7d0fb?auto=format&fit=crop&q=80&w=800",
+    videoUrl: "https://www.youtube.com/watch?v=Gm9D5sbbDZg",
   },
   {
     id: 3,
@@ -70,6 +72,7 @@ export const projectsData = [
     awards: "Gold Winner, 2023 New York Festivals TV & Film Awards",
     image:
       "https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&q=80&w=800",
+    videoUrl: "https://www.youtube.com/watch?v=EuoOZ6zHEDM",
   },
   {
     id: 4,
@@ -80,6 +83,7 @@ export const projectsData = [
     awards: "Best Current Affairs Programme, 2024 ContentAsia Awards",
     image:
       "https://images.unsplash.com/photo-1558459654-c430be5b0a44?auto=format&fit=crop&q=80&w=800",
+    videoUrl: "https://www.youtube.com/watch?v=c08GXOLdGWM",
   },
   {
     id: 5,
@@ -90,6 +94,7 @@ export const projectsData = [
     awards: "Gold World Medalist, 2024 New York Festivals",
     image:
       "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800",
+    videoUrl: "https://www.youtube.com/watch?v=rNlYVim_iIk",
   },
   {
     id: 6,
@@ -100,6 +105,7 @@ export const projectsData = [
     awards: "Silver World Medalist, 2024 New York Festivals",
     image:
       "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=800",
+    videoUrl: "https://www.youtube.com/watch?v=9l3567pGsIA",
   },
   {
     id: 7,
@@ -110,6 +116,7 @@ export const projectsData = [
     awards: "Best Regional Entry, 2021 Gawad Alternatibo",
     image:
       "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=800",
+    videoUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
   },
 ];
 
