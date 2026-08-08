@@ -47,7 +47,6 @@ export default function Founder() {
             </p>
           </div>
 
-          {/* New Editorial Accolades List */}
           <div className="mt-8 pt-8 border-t border-neutral-200 dark:border-neutral-800">
             <h3 className="text-[10px] font-black tracking-[0.2em] uppercase text-yellow-500 mb-4">
               Notable Recognitions
