@@ -29,7 +29,7 @@ export default function ProjectsGallery() {
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all ${
+              className={`px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] transition-all ${
                 filter === cat
                   ? "bg-yellow-500 text-black"
                   : "bg-neutral-200 dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-white"
