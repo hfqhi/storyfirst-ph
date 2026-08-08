@@ -14,7 +14,7 @@ export default function Services() {
         {servicesData.map((service) => (
           <div
             key={`media-${service.id}`}
-            className={`absolute inset-0 transition-opacity duration-1000 ${hoveredService === service.id ? "opacity-100" : "opacity-0"}`}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${hoveredService === service.id ? "opacity-100" : "opacity-0"}`}
           >
             {service.visualType === "video" ? (
               <video

@@ -1,4 +1,5 @@
 import React from "react";
+import marcoRomas from "../assets/marco-romas.png";
 
 export default function Founder() {
   return (
@@ -10,11 +11,10 @@ export default function Founder() {
         {/* Editorial Portrait Column */}
         <div className="md:col-span-5 relative">
           <div className="aspect-[3/4] overflow-hidden bg-neutral-200 dark:bg-neutral-800 border-4 border-white dark:border-neutral-950 shadow-2xl">
-            {/* Replace with Marco's actual transparent/cutout image path */}
             <img
-              src="public/images/marco-romas-portrait.png"
+              src={marcoRomas}
               alt="Marco Romas"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out"
             />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-black font-black uppercase px-6 py-4 text-2xl shadow-lg transform rotate-3">
@@ -23,7 +23,7 @@ export default function Founder() {
         </div>
 
         {/* Credentials Column */}
-        <div className="md:col-span-7 space-y-8 md:pl-10 text-neutral-900 dark:text-white">
+        <div className="md:col-span-7 space-y-8 md:pl-10 text-neutral-900 dark:text-white transition-colors duration-500">
           <div>
             <h2 className="text-4xl sm:text-5xl font-black uppercase tracking-tighter leading-none mb-2">
               Impactful Storytelling

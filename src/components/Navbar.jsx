@@ -17,12 +17,16 @@ export default function Navbar({ isDark, toggleTheme }) {
         {/* Exact Logo Recreation */}
         <a
           href="#"
-          className="flex flex-col text-black dark:text-white leading-[0.8] tracking-tighter transition-colors"
+          className="flex flex-col text-black dark:text-white leading-[0.85] tracking-tighter transition-colors w-fit"
         >
-          <span className="text-3xl font-black uppercase">Story</span>
-          <div className="flex items-start">
-            <span className="text-4xl font-black uppercase">First</span>
-            <span className="text-sm font-bold uppercase mt-1 ml-0.5 tracking-normal">
+          <span className="text-4xl font-black uppercase tracking-tight">
+            Story
+          </span>
+          <div className="flex items-end">
+            <span className="text-4xl font-black uppercase tracking-tight">
+              First
+            </span>
+            <span className="text-sm font-bold uppercase mb-[2px] ml-1 tracking-normal">
               PH
             </span>
           </div>
@@ -40,7 +44,6 @@ export default function Navbar({ isDark, toggleTheme }) {
             </a>
           ))}
 
-          {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
             className="ml-4 p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-black dark:text-white"
