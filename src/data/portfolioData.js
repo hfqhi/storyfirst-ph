@@ -13,7 +13,7 @@ export const servicesData = [
     description:
       "End-to-end editorial vision and direction for high-impact film, television, and digital platforms.",
     visualType: "image",
-    mediaUrl: "01.png",
+    mediaUrl: "01.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const servicesData = [
     description:
       "Deep-dive investigations, local fixing, and precise segment production for global news agencies.",
     visualType: "image",
-    mediaUrl: "02.png",
+    mediaUrl: "02.jpg",
   },
   {
     id: 3,
@@ -29,20 +29,27 @@ export const servicesData = [
     description:
       "Precision editing, script structuring, and visual manipulation designed to maximize human impact.",
     visualType: "image",
-    mediaUrl: "03.png",
+    mediaUrl: "03.jpg",
   },
 ];
 
 export const projectsData = [
   // --- DOCUMENTARIES ---
   {
+    id: 17,
+    title: "Les Petits Forcats de l'or",
+    category: "TV Documentary",
+    client: "ARTE of Paris, France",
+    roles: "News Fixer, Local Producer, Researcher",
+    image: "les-petits.png",
+    videoUrl: "https://www.youtube.com/watch?v=wMGzsvO6lWY",
+  },
+  {
     id: 1,
     title: "Wombs for Rent",
     category: "Online Documentary",
     client: "GMA Network of Philippines",
     roles: "Reporter, Researcher, Director, Edit Supervisor, Writer",
-    awards:
-      "Winner for Best Investigative Story, 2024 Catholic Mass Media Awards",
     image: "wombs-for-rent.png",
     videoUrl: "https://www.youtube.com/watch?v=922MzLxNEiA",
   },
@@ -52,8 +59,6 @@ export const projectsData = [
     category: "Film Documentary",
     client: "GMA Public Affairs & GMA Pictures",
     roles: "Co-writer and co-director",
-    awards:
-      "NYF Finalist (2025), Asian Academy National Winner, Gawad Urian Nominee",
     image: "lost-sabungeros.png",
     videoUrl: "https://www.youtube.com/watch?v=Gm9D5sbbDZg",
   },
@@ -63,7 +68,6 @@ export const projectsData = [
     category: "Television Documentary",
     client: "GMA Network of Philippines",
     roles: "Field Producer, Writer, Edit Supervisor, Director",
-    awards: "Gold Winner, 2023 New York Festivals TV & Film Awards",
     image: "wounds-of-woes.png",
     videoUrl: "https://www.youtube.com/watch?v=EuoOZ6zHEDM",
   },
@@ -73,7 +77,6 @@ export const projectsData = [
     category: "Documentary",
     client: "Channel News Asia of Singapore",
     roles: "Assistant Producer (PH), News Fixer, Researcher",
-    awards: "Best Current Affairs Programme, 2024 ContentAsia Awards",
     image: "the-negotiators.png",
     videoUrl: "https://www.youtube.com/watch?v=c08GXOLdGWM",
   },
@@ -83,7 +86,6 @@ export const projectsData = [
     category: "Television Documentary",
     client: "GMA Network of Philippines",
     roles: "Field Producer, Edit Supervisor",
-    awards: "Gold World Medalist, 2024 New York Festivals",
     image: "batas-bata.png",
     videoUrl: "https://www.youtube.com/watch?v=rNlYVim_iIk",
   },
@@ -93,7 +95,6 @@ export const projectsData = [
     category: "Television Documentary",
     client: "GMA Network of Philippines",
     roles: "Segment Producer, Edit Supervisor",
-    awards: "Silver World Medalist, 2024 New York Festivals",
     image: "hingang-malalim.png",
     videoUrl: "https://www.youtube.com/watch?v=9l3567pGsIA",
   },
@@ -103,7 +104,6 @@ export const projectsData = [
     category: "Documentary",
     client: "Philippine Center for Investigative Journalism",
     roles: "Director, Writer, Edit Supervisor",
-    awards: "Best Regional Entry, 2021 Gawad Alternatibo",
     image: "ang-pinanggang-anak-ni-julieta.png",
     videoUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
   },
