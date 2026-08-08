@@ -1,29 +1,31 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar({ isDark, toggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Identity", href: "#identity" },
     { name: "Work", href: "#work" },
     { name: "Services", href: "#services" },
-    { name: "Partnerships", href: "#partnerships" },
+    { name: "Founder", href: "#founder" },
     { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-neutral-950/90 backdrop-blur-md z-50 border-b border-neutral-800">
+    <nav className="fixed top-0 left-0 w-full bg-white/80 dark:bg-neutral-950/90 backdrop-blur-md z-40 border-b border-neutral-200 dark:border-neutral-800 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Exact Logo Recreation */}
         <a
           href="#"
-          className="text-xl font-black tracking-tighter text-white flex items-center gap-1"
+          className="flex flex-col text-black dark:text-white leading-[0.8] tracking-tighter transition-colors"
         >
-          STORY
-          <span className="bg-yellow-400 text-black px-1 rounded-sm">
-            FIRST
-          </span>
-          <span className="text-xs self-start text-neutral-400">PH</span>
+          <span className="text-3xl font-black uppercase">Story</span>
+          <div className="flex items-start">
+            <span className="text-4xl font-black uppercase">First</span>
+            <span className="text-sm font-bold uppercase mt-1 ml-0.5 tracking-normal">
+              PH
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
@@ -32,31 +34,44 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-neutral-300 hover:text-yellow-400 transition-colors"
+              className="text-neutral-600 dark:text-neutral-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
             >
               {link.name}
             </a>
           ))}
+
+          {/* Theme Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="ml-4 p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-black dark:text-white"
+          >
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white focus:outline-none"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        {/* Mobile Controls */}
+        <div className="md:hidden flex items-center gap-4 text-black dark:text-white">
+          <button onClick={toggleTheme} className="p-2">
+            {isDark ? <Sun size={24} /> : <Moon size={24} />}
+          </button>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="focus:outline-none"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="md:hidden bg-neutral-900 border-b border-neutral-800 px-6 py-6 flex flex-col gap-4 text-center font-bold uppercase">
+        <div className="md:hidden bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-6 py-6 flex flex-col gap-4 text-center font-bold uppercase">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-neutral-200 hover:text-yellow-400 py-2 border-b border-neutral-800"
+              className="text-neutral-800 dark:text-neutral-200 hover:text-yellow-500 py-2 border-b border-neutral-100 dark:border-neutral-800"
             >
               {link.name}
             </a>
