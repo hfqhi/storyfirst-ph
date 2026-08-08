@@ -21,7 +21,7 @@ export default function Contact() {
 
           <div className="mt-10 space-y-6">
             <div>
-              <p className="text-yellow-600 dark:text-yellow-500 text-xs font-black tracking-[0.2em] uppercase mb-1">
+              <p className="text-yellow-600 dark:text-yellow-500 text-[10px] font-black tracking-[0.2em] uppercase mb-1">
                 Email
               </p>
               <p className="text-neutral-950 dark:text-white font-medium text-lg">
@@ -29,7 +29,7 @@ export default function Contact() {
               </p>
             </div>
             <div>
-              <p className="text-yellow-600 dark:text-yellow-500 text-xs font-black tracking-[0.2em] uppercase mb-1">
+              <p className="text-yellow-600 dark:text-yellow-500 text-[10px] font-black tracking-[0.2em] uppercase mb-1">
                 Location
               </p>
               <p className="text-neutral-950 dark:text-white font-medium text-lg">
@@ -44,7 +44,7 @@ export default function Contact() {
           className="bg-white dark:bg-neutral-950 p-8 border border-neutral-200 dark:border-neutral-800 space-y-6 shadow-sm"
         >
           <div>
-            <label className="block text-xs font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
+            <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
               Name
             </label>
             <input
@@ -54,7 +54,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-xs font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
+            <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
               Email
             </label>
             <input
@@ -64,7 +64,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-xs font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
+            <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
               Message
             </label>
             <textarea
