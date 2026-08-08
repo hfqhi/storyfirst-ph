@@ -14,8 +14,8 @@ export default function Hero() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0 grayscale opacity-40 mix-blend-multiply dark:mix-blend-lighten"
-        src="https://cdn.pixabay.com/video/2019/11/08/28859-370162593_tiny.mp4"
+        className="absolute inset-0 w-full h-full object-cover z-0 grayscale opacity-80 mix-blend-multiply dark:mix-blend-lighten"
+        src="storyfirst-clip.mp4"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-white/90 to-white/70 dark:from-neutral-950/90 dark:to-neutral-950/70 z-0"></div>
 
