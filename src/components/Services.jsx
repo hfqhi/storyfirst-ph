@@ -45,7 +45,6 @@ export default function Services() {
           </h2>
         </div>
 
-        {/* Sharper Agency Format */}
         <div className="flex flex-col border-t border-neutral-300 dark:border-neutral-800">
           {servicesData.map((service) => (
             <div
