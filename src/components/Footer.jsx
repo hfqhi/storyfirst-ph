@@ -26,7 +26,7 @@ export default function Footer() {
 
         <div className="flex gap-8 text-[10px] font-black tracking-[0.2em] uppercase">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/profile.php?id=61578130948660"
             target="_blank"
             rel="noreferrer"
             className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
@@ -34,7 +34,7 @@ export default function Footer() {
             Facebook
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/storyfirstph/?hl=en"
             target="_blank"
             rel="noreferrer"
             className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
@@ -42,7 +42,7 @@ export default function Footer() {
             Instagram
           </a>
           <a
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@storyfirst.ph"
             target="_blank"
             rel="noreferrer"
             className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
