@@ -48,7 +48,7 @@ export default function ProjectsGallery() {
             target="_blank"
             rel="noreferrer"
             key={project.id}
-            className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 overflow-hidden group hover:border-yellow-500 transition-colors block"
+            className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 overflow-hidden group hover:border-yellow-500 transition-all duration-300 block hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-500/10"
           >
             <div className="relative overflow-hidden aspect-video">
               <img
