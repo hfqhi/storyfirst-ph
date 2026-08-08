@@ -9,14 +9,20 @@ export default function Founder() {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-5 relative group">
-          <div className="aspect-[3/4] overflow-hidden bg-neutral-200 dark:bg-neutral-800 border-4 border-white dark:border-neutral-950 shadow-2xl">
+          {/* Wrapped the image container in an anchor tag */}
+          <a
+            href="https://www.imdb.com/name/nm10904388/"
+            target="_blank"
+            rel="noreferrer"
+            className="block aspect-[3/4] overflow-hidden bg-neutral-200 dark:bg-neutral-800 border-4 border-white dark:border-neutral-950 shadow-2xl cursor-pointer"
+          >
             <img
               src={marcoRomas}
               alt="Marco Romas"
               className="w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105"
             />
-          </div>
-          <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-black font-black uppercase px-6 py-4 text-2xl shadow-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-500">
+          </a>
+          <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-black font-black uppercase px-6 py-4 text-2xl shadow-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-500 pointer-events-none">
             Marco Romas
           </div>
         </div>
@@ -47,7 +53,6 @@ export default function Founder() {
             </p>
           </div>
 
-          {/* Updated to Professional Bullets */}
           <div className="mt-10 pt-10 border-t border-neutral-200 dark:border-neutral-800">
             <h3 className="text-[10px] font-black tracking-[0.2em] uppercase text-yellow-600 dark:text-yellow-500 mb-8">
               Notable Recognitions
