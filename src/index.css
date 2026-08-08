@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-/* Forces Tailwind v4 to listen to our manual dark mode toggle */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Infinite Scrolling Marquee Animation */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -14,5 +12,5 @@
 }
 
 .animate-marquee {
-  animation: marquee 40s linear infinite;
+  animation: marquee 60s linear infinite;
 }
