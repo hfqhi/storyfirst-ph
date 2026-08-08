@@ -12,9 +12,8 @@ export default function Navbar({ isDark, toggleTheme }) {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/80 dark:bg-neutral-950/90 backdrop-blur-md z-40 border-b border-neutral-200 dark:border-neutral-800 transition-colors duration-500">
+    <nav className="fixed top-0 left-0 w-full bg-white/90 dark:bg-neutral-950/90 backdrop-blur-md z-40 border-b border-neutral-200 dark:border-neutral-900 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Exact Logo Recreation */}
         <a
           href="#"
           className="flex flex-col text-black dark:text-white leading-[0.85] tracking-tighter transition-colors w-fit"
@@ -32,15 +31,16 @@ export default function Navbar({ isDark, toggleTheme }) {
           </div>
         </a>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-wider">
+        <div className="hidden md:flex items-center gap-10 text-sm font-black uppercase tracking-[0.1em]">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-neutral-600 dark:text-neutral-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
+              className="relative group text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-white transition-colors py-2"
             >
               {link.name}
+              {/* Expanding Underline Hover Effect */}
+              <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-yellow-500 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
             </a>
           ))}
 
@@ -52,7 +52,6 @@ export default function Navbar({ isDark, toggleTheme }) {
           </button>
         </div>
 
-        {/* Mobile Controls */}
         <div className="md:hidden flex items-center gap-4 text-black dark:text-white">
           <button onClick={toggleTheme} className="p-2">
             {isDark ? <Sun size={24} /> : <Moon size={24} />}
@@ -66,9 +65,8 @@ export default function Navbar({ isDark, toggleTheme }) {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-6 py-6 flex flex-col gap-4 text-center font-bold uppercase">
+        <div className="md:hidden bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-6 py-6 flex flex-col gap-4 text-center font-bold uppercase tracking-widest">
           {navLinks.map((link) => (
             <a
               key={link.name}
