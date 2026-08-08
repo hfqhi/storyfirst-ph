@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="bg-white dark:bg-neutral-950 border-t border-neutral-200 dark:border-neutral-900 py-12 px-6 text-center text-xs text-neutral-500 font-mono transition-colors duration-500">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center sm:items-start">
-          {/* Identical Stacked Logo from Navbar */}
           <a
             href="#"
             className="flex flex-col text-black dark:text-white leading-[0.85] tracking-tighter transition-colors w-fit items-center sm:items-start mb-2"
@@ -25,7 +24,7 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} ALL RIGHTS RESERVED.</p>
         </div>
 
-        <div className="flex gap-8 text-xs font-black tracking-[0.2em] uppercase">
+        <div className="flex gap-8 text-[10px] font-black tracking-[0.2em] uppercase">
           <a
             href="https://facebook.com"
             target="_blank"
