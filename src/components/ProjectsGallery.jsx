@@ -24,13 +24,13 @@ export default function ProjectsGallery() {
           </h2>
         </div>
 
-        {/* Solid Block Filters */}
+        {/* Added cursor-pointer to filter buttons */}
         <div className="flex flex-wrap gap-2">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-5 py-3 text-[10px] font-black uppercase tracking-[0.2em] transition-all ${
+              className={`px-5 py-3 text-[10px] font-black uppercase tracking-[0.2em] transition-all cursor-pointer ${
                 filter === cat
                   ? "bg-yellow-500 text-black shadow-lg shadow-yellow-500/20"
                   : "bg-neutral-200 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:bg-neutral-300 dark:hover:bg-neutral-700"
@@ -49,9 +49,8 @@ export default function ProjectsGallery() {
             target="_blank"
             rel="noreferrer"
             key={project.id}
-            className="relative group h-[400px] flex flex-col justify-end p-8 overflow-hidden bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-neutral-300/50 dark:hover:shadow-yellow-500/5 block"
+            className="relative group h-[400px] flex flex-col justify-end p-8 overflow-hidden bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-neutral-300/50 dark:hover:shadow-yellow-500/5 block cursor-pointer"
           >
-            {/* In-Background Image Reveal on Hover */}
             <div className="absolute inset-0 z-0">
               <img
                 src={project.image}
@@ -61,7 +60,6 @@ export default function ProjectsGallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/80 to-transparent opacity-100 group-hover:opacity-80 transition-opacity duration-700"></div>
             </div>
 
-            {/* Card Content */}
             <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
               <span className="inline-block bg-yellow-500 text-black text-[10px] font-black tracking-[0.2em] uppercase px-3 py-1 mb-4 shadow-sm">
                 {project.category}
@@ -73,7 +71,6 @@ export default function ProjectsGallery() {
                 {project.roles}
               </p>
 
-              {/* Client Info Restored */}
               {project.client && (
                 <p className="text-neutral-500 text-[10px] font-black tracking-[0.1em] uppercase border-t border-neutral-700 pt-3 mt-4 group-hover:text-neutral-300 transition-colors">
                   {project.client}

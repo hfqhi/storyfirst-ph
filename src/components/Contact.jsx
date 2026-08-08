@@ -3,10 +3,20 @@ import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   const [isSent, setIsSent] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSent(true);
+    setFormData({ name: "", email: "", message: "" });
     setTimeout(() => setIsSent(false), 3000);
   };
 
@@ -29,7 +39,6 @@ export default function Contact() {
           </p>
 
           <div className="mt-10 space-y-6 select-text">
-            {/* Email Icon */}
             <div className="flex items-center gap-6">
               <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg shadow-yellow-500/20 shrink-0">
                 <Mail size={20} strokeWidth={2.5} />
@@ -39,7 +48,6 @@ export default function Contact() {
               </p>
             </div>
 
-            {/* Phone Icon */}
             <div className="flex items-center gap-6">
               <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg shadow-yellow-500/20 shrink-0">
                 <Phone size={20} strokeWidth={2.5} />
@@ -61,7 +69,10 @@ export default function Contact() {
             </label>
             <input
               type="text"
+              name="name"
               required
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Your Full Name"
               className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
             />
@@ -72,7 +83,10 @@ export default function Contact() {
             </label>
             <input
               type="email"
+              name="email"
               required
+              value={formData.email}
+              onChange={handleChange}
               placeholder="your@email.com"
               className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
             />
@@ -83,14 +97,18 @@ export default function Contact() {
             </label>
             <textarea
               rows="4"
+              name="message"
               required
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Tell us about yourself..."
               className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 resize-none transition-colors"
             ></textarea>
           </div>
+          {/* Added cursor-pointer to the submit button */}
           <button
             type="submit"
-            className={`w-full font-extrabold uppercase py-4 text-sm tracking-wider transition-all duration-300 active:scale-95 ${
+            className={`w-full font-extrabold uppercase py-4 text-sm tracking-wider transition-all duration-300 active:scale-95 cursor-pointer ${
               isSent
                 ? "bg-green-500 text-white"
                 : "bg-yellow-500 hover:bg-yellow-400 text-black shadow-xl shadow-yellow-500/20"

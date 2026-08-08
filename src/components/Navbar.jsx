@@ -15,7 +15,7 @@ export default function Navbar({ isDark, toggleTheme }) {
     <nav className="fixed top-0 left-0 w-full bg-white/90 dark:bg-neutral-950/90 backdrop-blur-md z-40 border-b border-neutral-200 dark:border-neutral-900 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <a
-          href="#"
+          href="#identity"
           className="flex flex-col text-black dark:text-white leading-[0.85] tracking-tighter transition-colors w-fit"
         >
           <span className="text-4xl font-black uppercase tracking-tight">
@@ -39,26 +39,27 @@ export default function Navbar({ isDark, toggleTheme }) {
               className="relative group text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-white transition-colors py-2"
             >
               {link.name}
-              {/* Expanding Underline Hover Effect */}
               <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-yellow-500 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
             </a>
           ))}
 
+          {/* Added cursor-pointer to desktop theme toggle */}
           <button
             onClick={toggleTheme}
-            className="ml-4 p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-black dark:text-white"
+            className="ml-4 p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-black dark:text-white cursor-pointer"
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </div>
 
         <div className="md:hidden flex items-center gap-4 text-black dark:text-white">
-          <button onClick={toggleTheme} className="p-2">
+          {/* Added cursor-pointer to mobile theme toggle */}
+          <button onClick={toggleTheme} className="p-2 cursor-pointer">
             {isDark ? <Sun size={24} /> : <Moon size={24} />}
           </button>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="focus:outline-none"
+            className="focus:outline-none cursor-pointer"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
