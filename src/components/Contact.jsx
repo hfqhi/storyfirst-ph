@@ -50,7 +50,7 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Your Full Name"
-              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white text-sm focus:outline-none focus:border-yellow-500 transition-colors"
+              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
             />
           </div>
           <div>
@@ -60,7 +60,7 @@ export default function Contact() {
             <input
               type="email"
               placeholder="your@email.com"
-              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white text-sm focus:outline-none focus:border-yellow-500 transition-colors"
+              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
             />
           </div>
           <div>
@@ -69,8 +69,8 @@ export default function Contact() {
             </label>
             <textarea
               rows="4"
-              placeholder="Tell us about your project..."
-              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white text-sm focus:outline-none focus:border-yellow-500 resize-none transition-colors"
+              placeholder="Tell us about yourself..."
+              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 resize-none transition-colors"
             ></textarea>
           </div>
           <button
