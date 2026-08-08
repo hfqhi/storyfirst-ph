@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   const [isSent, setIsSent] = useState(false);
@@ -6,7 +7,6 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSent(true);
-    // Revert button text after 3 seconds
     setTimeout(() => setIsSent(false), 3000);
   };
 
@@ -28,22 +28,24 @@ export default function Contact() {
             and our team will get back to you promptly.
           </p>
 
-          {/* Added select-text to allow clients to copy the email address */}
           <div className="mt-10 space-y-6 select-text">
-            <div>
-              <p className="text-yellow-600 dark:text-yellow-500 text-[10px] font-black tracking-[0.2em] uppercase mb-1">
-                Email
-              </p>
+            {/* Email Icon */}
+            <div className="flex items-center gap-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg shadow-yellow-500/20 shrink-0">
+                <Mail size={20} strokeWidth={2.5} />
+              </div>
               <p className="text-neutral-950 dark:text-white font-medium text-lg">
-                contact@storyfirst.ph
+                storyfirstph@gmail.com
               </p>
             </div>
-            <div>
-              <p className="text-yellow-600 dark:text-yellow-500 text-[10px] font-black tracking-[0.2em] uppercase mb-1">
-                Location
-              </p>
+
+            {/* Phone Icon */}
+            <div className="flex items-center gap-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg shadow-yellow-500/20 shrink-0">
+                <Phone size={20} strokeWidth={2.5} />
+              </div>
               <p className="text-neutral-950 dark:text-white font-medium text-lg">
-                Philippines
+                +63 928 604 4120 (Marco)
               </p>
             </div>
           </div>
