@@ -3,13 +3,14 @@ import { projectsData } from "../data/portfolioData";
 
 export default function ProjectsGallery() {
   const [filter, setFilter] = useState("All");
-
-  const categories = ["All", "Documentary", "Journalism", "Culture"];
+  const categories = ["All", "Documentary", "Hosting", "Brands"];
 
   const filteredProjects =
     filter === "All"
       ? projectsData
-      : projectsData.filter((p) => p.category === filter);
+      : projectsData.filter(
+          (p) => p.category.includes(filter) || p.category === filter,
+        );
 
   return (
     <section id="work" className="py-20 max-w-7xl mx-auto px-6">
@@ -18,12 +19,11 @@ export default function ProjectsGallery() {
           <span className="bg-yellow-500 text-black uppercase font-black px-3 py-1 text-sm tracking-widest inline-block mb-3">
             Selected Work
           </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-black text-neutral-950 dark:text-white uppercase tracking-tight">
             Featured Projects
           </h2>
         </div>
 
-        {/* Category Filters */}
         <div className="flex flex-wrap gap-2">
           {categories.map((cat) => (
             <button
@@ -32,7 +32,7 @@ export default function ProjectsGallery() {
               className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all ${
                 filter === cat
                   ? "bg-yellow-500 text-black"
-                  : "bg-neutral-900 text-neutral-400 hover:text-white hover:bg-neutral-800"
+                  : "bg-neutral-200 dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-white"
               }`}
             >
               {cat}
@@ -41,12 +41,14 @@ export default function ProjectsGallery() {
         </div>
       </div>
 
-      {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project) => (
-          <div
+          <a
+            href={project.videoUrl}
+            target="_blank"
+            rel="noreferrer"
             key={project.id}
-            className="bg-neutral-900 border border-neutral-800 overflow-hidden group"
+            className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 overflow-hidden group hover:border-yellow-500 transition-colors block"
           >
             <div className="relative overflow-hidden aspect-video">
               <img
@@ -54,19 +56,24 @@ export default function ProjectsGallery() {
                 alt={project.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <span className="absolute top-3 left-3 bg-black/80 text-yellow-500 text-xs font-mono px-2 py-1 font-bold">
+              <span className="absolute top-3 left-3 bg-black/90 text-yellow-500 text-xs font-mono px-2 py-1 font-bold">
                 {project.category}
               </span>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-white uppercase group-hover:text-yellow-500 transition-colors">
+              <h3 className="text-xl font-black text-neutral-950 dark:text-white uppercase group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transition-colors">
                 {project.title}
               </h3>
-              <p className="text-neutral-400 text-sm mt-2">
-                {project.description}
+              <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+                {project.roles}
               </p>
+              {project.client && (
+                <p className="text-neutral-500 text-xs mt-1 font-mono uppercase border-t border-neutral-200 dark:border-neutral-800 pt-2 mt-3">
+                  {project.client}
+                </p>
+              )}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
