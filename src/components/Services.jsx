@@ -35,24 +35,32 @@ export default function Services() {
           </h2>
         </div>
 
-        {/* Restored border-t for the top horizontal line */}
         <div className="flex flex-col border-t border-neutral-300 dark:border-neutral-800">
           {servicesData.map((service) => (
+            // The straight divider line now wraps the hover box
             <div
               key={service.id}
-              onMouseEnter={() => setHoveredService(service.id)}
-              onMouseLeave={() => setHoveredService(null)}
-              // Restored border-b for the bottom underlines and removed rounded corners
-              className={`group flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-16 py-10 px-8 transition-all duration-500 ease-in-out cursor-pointer border-b border-neutral-300 dark:border-neutral-800 ${hoveredService === service.id ? "bg-yellow-500/80" : "hover:bg-yellow-500/80"}`}
+              className="border-b border-neutral-300 dark:border-neutral-800 py-2"
             >
-              <div className="flex items-center md:w-[55%]">
-                <h3 className="text-3xl sm:text-4xl font-black text-neutral-900 dark:text-neutral-100 group-hover:text-black transition-colors duration-500 uppercase drop-shadow-md group-hover:drop-shadow-none">
-                  {service.title}
-                </h3>
+              <div
+                onMouseEnter={() => setHoveredService(service.id)}
+                onMouseLeave={() => setHoveredService(null)}
+                // Restored rounded-3xl and applied the rich yellow gradient
+                className={`group flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-16 py-8 px-8 transition-all duration-500 ease-in-out cursor-pointer rounded-3xl ${
+                  hoveredService === service.id
+                    ? "bg-gradient-to-r from-yellow-400/90 to-yellow-600/90 scale-[1.01]"
+                    : "hover:bg-gradient-to-r hover:from-yellow-400/90 hover:to-yellow-600/90 hover:scale-[1.01]"
+                }`}
+              >
+                <div className="flex items-center md:w-[55%]">
+                  <h3 className="text-3xl sm:text-4xl font-black text-neutral-900 dark:text-neutral-100 group-hover:text-black transition-colors duration-500 uppercase drop-shadow-md group-hover:drop-shadow-none">
+                    {service.title}
+                  </h3>
+                </div>
+                <p className="text-neutral-800 dark:text-neutral-300 group-hover:text-black/90 text-sm md:w-[35%] leading-relaxed font-bold transition-colors duration-500 drop-shadow-md group-hover:drop-shadow-none">
+                  {service.description}
+                </p>
               </div>
-              <p className="text-neutral-800 dark:text-neutral-300 group-hover:text-black/90 text-sm md:w-[35%] leading-relaxed font-bold transition-colors duration-500 drop-shadow-md group-hover:drop-shadow-none">
-                {service.description}
-              </p>
             </div>
           ))}
         </div>
