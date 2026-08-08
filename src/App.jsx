@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import ProjectsGallery from "./components/ProjectsGallery";
 import Founder from "./components/Founder";
+import Partnerships from "./components/Partnerships";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -23,7 +24,6 @@ export default function App() {
   const toggleTheme = () => setIsDark(!isDark);
 
   return (
-    // Added 'select-none' here to prevent global text copying
     <div className="select-none bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white min-h-screen selection:bg-yellow-500 selection:text-black transition-colors duration-500 relative">
       <div
         className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-60 mix-blend-multiply dark:invert dark:mix-blend-screen dark:opacity-20 transition-all duration-500"
@@ -41,6 +41,7 @@ export default function App() {
           <Founder />
           <Services />
           <ProjectsGallery />
+          <Partnerships />
           <Contact />
         </main>
         <Footer />
