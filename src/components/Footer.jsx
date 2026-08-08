@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center sm:items-start">
           <a
-            href="#"
+            href="#identity"
             className="flex flex-col text-black dark:text-white leading-[0.85] tracking-tighter transition-colors w-fit items-center sm:items-start mb-2"
           >
             <span className="text-3xl font-black uppercase tracking-tight">
@@ -24,30 +25,36 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} ALL RIGHTS RESERVED.</p>
         </div>
 
-        <div className="flex gap-8 text-[10px] font-black tracking-[0.2em] uppercase">
+        {/* Sleek, optimized brand icons from react-icons */}
+        <div className="flex items-center gap-6">
           <a
             href="https://www.facebook.com/profile.php?id=61578130948660"
             target="_blank"
             rel="noreferrer"
-            className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
+            className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-all duration-300 hover:-translate-y-1"
+            aria-label="Facebook"
           >
-            Facebook
+            <FaFacebook size={24} />
           </a>
+
           <a
             href="https://www.instagram.com/storyfirstph/?hl=en"
             target="_blank"
             rel="noreferrer"
-            className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
+            className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-all duration-300 hover:-translate-y-1"
+            aria-label="Instagram"
           >
-            Instagram
+            <FaInstagram size={24} />
           </a>
+
           <a
             href="https://www.tiktok.com/@storyfirst.ph"
             target="_blank"
             rel="noreferrer"
-            className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors"
+            className="text-neutral-600 dark:text-neutral-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition-all duration-300 hover:-translate-y-1"
+            aria-label="TikTok"
           >
-            TikTok
+            <FaTiktok size={24} />
           </a>
         </div>
       </div>
