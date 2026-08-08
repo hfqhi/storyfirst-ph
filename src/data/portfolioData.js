@@ -11,27 +11,27 @@ export const identityData = {
 export const servicesData = [
   {
     id: 1,
-    title: "Documentary Production",
+    title: "Cinematic Documentaries",
     description:
-      "End-to-end editorial vision, field producing, and directing for television, film, and online documentaries.",
+      "End-to-end editorial vision and direction for high-impact film, television, and digital platforms.",
     visualType: "video",
     mediaUrl:
       "https://cdn.pixabay.com/video/2020/05/24/40061-425553655_tiny.mp4",
   },
   {
     id: 2,
-    title: "Investigative Research & Fixing",
+    title: "Field Research & Fixing",
     description:
-      "On-the-ground research, news fixing, and segment producing for international and local news agencies.",
+      "Deep-dive investigations, local fixing, and precise segment production for global news agencies.",
     visualType: "image",
     mediaUrl:
       "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
-    title: "Post-Production & Manipulation",
+    title: "Post-Production & Narrative Editing",
     description:
-      "Edit supervision, scriptwriting, photo manipulation, and narrative structuring to ensure maximum impact.",
+      "Precision editing, script structuring, and visual manipulation designed to maximize human impact.",
     visualType: "video",
     mediaUrl:
       "https://cdn.pixabay.com/video/2019/02/13/21350-317208947_tiny.mp4",
