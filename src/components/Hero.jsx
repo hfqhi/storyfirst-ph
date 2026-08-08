@@ -15,7 +15,7 @@ export default function Hero() {
         className="space-y-6"
       >
         <p className="text-yellow-500 text-xs font-black tracking-[0.2em] uppercase mb-4">
-          // Media & Communications Organization
+          Media & Communications Organization
         </p>
 
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-neutral-950 dark:text-white uppercase leading-[0.9]">
