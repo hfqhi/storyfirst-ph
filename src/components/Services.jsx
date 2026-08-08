@@ -35,22 +35,21 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-4">
+        {/* Restored border-t for the top horizontal line */}
+        <div className="flex flex-col border-t border-neutral-300 dark:border-neutral-800">
           {servicesData.map((service) => (
             <div
               key={service.id}
               onMouseEnter={() => setHoveredService(service.id)}
               onMouseLeave={() => setHoveredService(null)}
-              // Added gap-8 md:gap-16 here to force a minimum gutter space
-              className={`group flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-16 py-10 px-8 transition-all duration-500 ease-in-out cursor-pointer rounded-3xl ${hoveredService === service.id ? "bg-yellow-500/80 scale-[1.01]" : "hover:bg-yellow-500/80 hover:scale-[1.01]"}`}
+              // Restored border-b for the bottom underlines and removed rounded corners
+              className={`group flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-16 py-10 px-8 transition-all duration-500 ease-in-out cursor-pointer border-b border-neutral-300 dark:border-neutral-800 ${hoveredService === service.id ? "bg-yellow-500/80" : "hover:bg-yellow-500/80"}`}
             >
-              {/* Dialed back width to w-[55%] so it doesn't push into the description */}
               <div className="flex items-center md:w-[55%]">
                 <h3 className="text-3xl sm:text-4xl font-black text-neutral-900 dark:text-neutral-100 group-hover:text-black transition-colors duration-500 uppercase drop-shadow-md group-hover:drop-shadow-none">
                   {service.title}
                 </h3>
               </div>
-              {/* Dialed back width to w-[35%] */}
               <p className="text-neutral-800 dark:text-neutral-300 group-hover:text-black/90 text-sm md:w-[35%] leading-relaxed font-bold transition-colors duration-500 drop-shadow-md group-hover:drop-shadow-none">
                 {service.description}
               </p>
