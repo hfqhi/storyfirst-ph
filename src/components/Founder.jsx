@@ -12,7 +12,7 @@ export default function Founder() {
           <div className="aspect-[3/4] overflow-hidden bg-neutral-200 dark:bg-neutral-800 border-4 border-white dark:border-neutral-950 shadow-2xl">
             {/* Replace with Marco's actual transparent/cutout image path */}
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
+              src="public/images/marco-romas-portrait.png"
               alt="Marco Romas"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
