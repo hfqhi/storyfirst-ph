@@ -12,9 +12,8 @@ export const servicesData = [
     title: "Cinematic Documentaries",
     description:
       "End-to-end editorial vision and direction for high-impact film, television, and digital platforms.",
-    visualType: "video",
-    mediaUrl:
-      "https://cdn.pixabay.com/video/2020/05/24/40061-425553655_tiny.mp4",
+    visualType: "image",
+    mediaUrl: "01.png",
   },
   {
     id: 2,
@@ -22,17 +21,15 @@ export const servicesData = [
     description:
       "Deep-dive investigations, local fixing, and precise segment production for global news agencies.",
     visualType: "image",
-    mediaUrl:
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800",
+    mediaUrl: "02.png",
   },
   {
     id: 3,
     title: "Post-Production & Narrative Editing",
     description:
       "Precision editing, script structuring, and visual manipulation designed to maximize human impact.",
-    visualType: "video",
-    mediaUrl:
-      "https://cdn.pixabay.com/video/2019/02/13/21350-317208947_tiny.mp4",
+    visualType: "image",
+    mediaUrl: "03.png",
   },
 ];
 
