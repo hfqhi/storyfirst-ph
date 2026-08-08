@@ -13,7 +13,7 @@ export default function Founder() {
             <img
               src={marcoRomas}
               alt="Marco Romas"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out"
+              className="w-full h-full object-cover transition-transform duration-1000 ease-in-out hover:scale-105"
             />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-black font-black uppercase px-6 py-4 text-2xl shadow-lg transform rotate-3">
