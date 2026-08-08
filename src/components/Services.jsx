@@ -61,7 +61,7 @@ export default function Services() {
                   {service.title}
                 </h3>
               </div>
-              <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-black/80 text-sm mt-4 md:mt-0 md:w-1/3 leading-relaxed font-medium transition-colors">
+              <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-black text-sm mt-4 md:mt-0 md:w-1/3 leading-relaxed font-medium transition-colors">
                 {service.description}
               </p>
             </div>
