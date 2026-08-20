@@ -1,56 +1,61 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { identityData } from "../data/portfolioData";
 
 export default function Hero() {
   return (
     <section
-      id="identity"
-      className="relative pt-32 pb-20 px-6 min-h-[90vh] flex flex-col justify-center items-center overflow-hidden border-b border-neutral-200 dark:border-neutral-900"
+      id="hero"
+      className="relative h-screen flex items-center justify-center overflow-hidden bg-neutral-950"
     >
-      {/* Fixed Cinematic Video Overlay for both modes */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-90 dark:opacity-70 contrast-125 saturate-110 transition-all duration-700"
-          src="storyfirst-clip.mp4"
-        />
-        <div className="absolute inset-0 bg-white/80 dark:bg-neutral-950/80"></div>
+          className="w-full h-full object-cover opacity-80 contrast-125 saturate-110"
+        >
+          <source src="storyfirst-clip.mp4" type="video/mp4" />
+        </video>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative z-10 max-w-5xl mx-auto w-full flex flex-col items-center text-center space-y-6"
-      >
-        <p className="text-yellow-600 dark:text-yellow-500 text-[10px] font-black tracking-[0.2em] uppercase mb-2">
-          Media & Communications Organization
-        </p>
+      <div className="relative z-20 text-center px-6 max-w-5xl mx-auto flex flex-col items-center mt-16">
+        <span className="text-yellow-500 font-black tracking-[0.3em] text-[10px] md:text-xs uppercase mb-6 drop-shadow-md">
+          Creative Communications & Production
+        </span>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight text-neutral-950 dark:text-white uppercase leading-none flex flex-col items-center">
-          {identityData.tagline}
-          <span className="bg-yellow-500 text-black px-6 pt-3 pb-2 mt-4 font-black tracking-tight w-fit shadow-lg shadow-yellow-500/10 block">
-            {identityData.subTagline}
+        {/* Massive Cinematic Headline */}
+        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-[0.9] drop-shadow-2xl">
+          Stories First.
+          <br />
+          {/* Applied the solid yellow block with black text here */}
+          <span className="bg-yellow-500 text-black px-6 py-2 inline-block mt-4 shadow-xl">
+            Always.
           </span>
         </h1>
 
-        <p className="text-neutral-700 dark:text-neutral-300 max-w-2xl text-base sm:text-lg font-medium pt-4 leading-relaxed">
-          {identityData.aboutText}
+        <p className="mt-8 text-sm sm:text-base md:text-lg text-neutral-300 font-medium max-w-3xl leading-relaxed drop-shadow-md">
+          {identityData.subTagline}
         </p>
 
-        <div className="pt-8 flex flex-col sm:flex-row items-center gap-4">
+        {/* Call to Action Buttons */}
+        <div className="mt-12 flex flex-col sm:flex-row gap-6">
           <a
             href="#work"
-            className="bg-yellow-500 hover:bg-yellow-400 text-black font-black uppercase px-10 py-5 text-sm tracking-[0.1em] transition-all hover:-translate-y-1 hover:shadow-2xl shadow-yellow-500/20 active:scale-95 block w-full sm:w-auto"
+            className="bg-yellow-500 text-black px-10 py-4 font-black uppercase tracking-widest text-sm hover:bg-yellow-400 transition-colors shadow-xl shadow-yellow-500/20"
           >
-            Explore Our Work
+            View Projects
+          </a>
+          <a
+            href="#contact"
+            className="bg-transparent border-2 border-white/30 text-white px-10 py-4 font-black uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-colors backdrop-blur-sm"
+          >
+            Work With Us
           </a>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
