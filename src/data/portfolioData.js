@@ -45,7 +45,7 @@ export const projectsData = [
     year: "2023",
     description:
       "International documentary production support covering illegal gold mining operations.",
-    awards: "Official Broadcaster",
+    awards: "TV Documentary", // Restored to Canva data
     imageUrl: "les-petits.png",
     linkUrl: "https://www.youtube.com/watch?v=wMGzsvO6lWY",
   },
@@ -53,12 +53,12 @@ export const projectsData = [
     id: 2,
     title: "Wombs for Rent",
     category: "Documentaries",
-    client: "GMA Network",
+    client: "GMA Network of Philippines",
     role: "Reporter, Researcher, Director, Edit Supervisor, Writer",
     year: "2023",
     description:
       "An investigative documentary exploring the underground commercial surrogacy industry in the Philippines.",
-    awards: "2025 International Emmy Nominee",
+    awards: "Online Documentary", // Restored to Canva data
     imageUrl: "wombs-for-rent.png",
     linkUrl: "https://www.youtube.com/watch?v=922MzLxNEiA",
   },
@@ -71,7 +71,7 @@ export const projectsData = [
     year: "2024",
     description:
       "A feature-length investigative documentary investigating the disappearances of cockfight enthusiasts.",
-    awards: "Official Selection",
+    awards: "Film Documentary", // Restored to Canva data
     imageUrl: "lost-sabungeros.png",
     linkUrl: "https://www.youtube.com/watch?v=Gm9D5sbbDZg",
   },
@@ -79,12 +79,12 @@ export const projectsData = [
     id: 4,
     title: "Wounds of Woes",
     category: "Documentaries",
-    client: "GMA Network",
+    client: "GMA Network of Philippines",
     role: "Field Producer, Writer, Edit Supervisor, Director",
     year: "2022",
     description:
       "A gripping television documentary highlighting severe medical conditions and lack of healthcare access.",
-    awards: "New York Festivals Gold",
+    awards: "Television Documentary", // Restored to Canva data
     imageUrl: "wounds-of-woes.png",
     linkUrl: "https://www.youtube.com/watch?v=EuoOZ6zHEDM",
   },
@@ -92,12 +92,12 @@ export const projectsData = [
     id: 5,
     title: "The Negotiators",
     category: "Documentaries",
-    client: "Channel News Asia (CNA)",
+    client: "Channel News Asia of Singapore",
     role: "Assistant Producer (PH), News Fixer, Researcher",
     year: "2021",
     description:
       "Asian regional documentary focusing on high-stakes crisis negotiation strategies.",
-    awards: "Asian Academy Creative Awards",
+    awards: "Documentary", // Restored to Canva data
     imageUrl: "the-negotiators.png",
     linkUrl: "https://www.youtube.com/watch?v=c08GXOLdGWM",
   },
@@ -105,12 +105,12 @@ export const projectsData = [
     id: 6,
     title: "Batas Bata",
     category: "Documentaries",
-    client: "GMA Network",
+    client: "GMA Network of Philippines",
     role: "Field Producer, Edit Supervisor",
     year: "2022",
     description:
       "An in-depth look into the juvenile justice system and youth rehabilitation in the Philippines.",
-    awards: "CMMA Finalist",
+    awards: "Television Documentary", // Restored to Canva data
     imageUrl: "batas-bata.png",
     linkUrl: "https://www.youtube.com/watch?v=rNlYVim_iIk",
   },
@@ -118,12 +118,12 @@ export const projectsData = [
     id: 7,
     title: "Hingang Malalim",
     category: "Documentaries",
-    client: "GMA Network",
+    client: "GMA Network of Philippines",
     role: "Segment Producer, Edit Supervisor",
     year: "2021",
     description:
       "A television documentary exploring respiratory illnesses and environmental health hazards.",
-    awards: "Official Broadcaster",
+    awards: "Television Documentary", // Restored to Canva data
     imageUrl: "hingang-malalim.png",
     linkUrl: "https://www.youtube.com/watch?v=9l3567pGsIA",
   },
@@ -131,18 +131,18 @@ export const projectsData = [
     id: 8,
     title: "Ang Pinanggang Anak ni Julieta",
     category: "Documentaries",
-    client: "PCIJ",
+    client: "Philippine Center for Investigative Journalism",
     role: "Director, Writer, Edit Supervisor",
     year: "2020",
     description:
-      "A human-centered investigative documentary produced in collaboration with the Philippine Center for Investigative Journalism.",
-    awards: "Official Selection",
+      "A human-centered investigative documentary produced in collaboration with the PCIJ.",
+    awards: "Documentary", // Restored to Canva data
     imageUrl: "ang-pinanggang-anak-ni-julieta.png",
     linkUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
   },
   {
     id: 9,
-    title: "Mark Wiens Food Documentary", // From the Brief
+    title: "Food Exploration Series",
     category: "Documentaries",
     client: "Mark Wiens",
     role: "Local Producing & Field Production",
@@ -154,43 +154,43 @@ export const projectsData = [
     linkUrl: "#",
   },
 
-  // --- CONTENT CREATION (Combined with Brands from original) ---
+  // --- CONTENT CREATION ---
   {
     id: 10,
-    title: "Lazada Digital Campaign",
+    title: "Lazada",
     category: "Content",
     client: "Lazada",
-    role: "Brand Collaboration & Storytelling",
+    role: "Brand Collaboration",
     year: "2024",
     description:
       "High-impact digital storytelling campaign driving e-commerce engagement.",
-    awards: "",
+    awards: "Brands",
     imageUrl: "lazada.png",
     linkUrl: "https://www.instagram.com/p/DG-C3WchUD2/",
   },
   {
     id: 11,
-    title: "Enervon Energy Series",
+    title: "Enervon",
     category: "Content",
     client: "Enervon",
-    role: "Content Creator",
+    role: "Brand Collaboration",
     year: "2024",
     description:
       "Short-form video series focused on health, vitality, and active lifestyles.",
-    awards: "",
+    awards: "Brands",
     imageUrl: "enervon.png",
     linkUrl: "https://www.instagram.com/reel/DF73TjjSYMz/",
   },
   {
     id: 12,
-    title: "Cyberzone Tech Feature",
+    title: "Cyberzone",
     category: "Content",
     client: "Cyberzone",
     role: "Brand Collaboration",
     year: "2023",
     description:
       "Engaging digital content highlighting the latest in consumer technology and gadgets.",
-    awards: "",
+    awards: "Brands",
     imageUrl: "cyberzone.png",
     linkUrl: "https://www.instagram.com/p/DH2sZEcM6te/",
   },
@@ -198,7 +198,7 @@ export const projectsData = [
   // --- EVENTS HOSTING & MODERATION ---
   {
     id: 13,
-    title: "National Presidential Summit", // From the Brief
+    title: "National Presidential Summit",
     category: "Events",
     client: "Office of the President",
     role: "Lead Moderator & Host",
@@ -211,14 +211,14 @@ export const projectsData = [
   },
   {
     id: 14,
-    title: "Universal Robina Corporate Event",
+    title: "Universal Robina",
     category: "Events",
     client: "Universal Robina",
     role: "Host / Presenter",
     year: "2023",
     description:
       "Anchored a major corporate gathering for one of the largest food and beverage companies in the Philippines.",
-    awards: "Corporate Event",
+    awards: "Hosting",
     imageUrl: "universal-robina.png",
     linkUrl:
       "https://www.facebook.com/mac.romas/videos/476702725461880/?rdid=qqNe4XUf6VyEmPsZ#",
@@ -232,34 +232,34 @@ export const projectsData = [
     year: "2024",
     description:
       "Hosted the prestigious regional pageant, guiding the live audience and broadcast viewers through the coronation night.",
-    awards: "Pageant / Festival",
+    awards: "Hosting",
     imageUrl: "miss-universe-cebu.png",
     linkUrl: "https://www.facebook.com/mac.romas/videos/976956220556190/?t=4",
   },
   {
     id: 16,
-    title: "Ajinomoto Culinary Event",
+    title: "Ajinomoto",
     category: "Events",
     client: "Ajinomoto",
     role: "Host / Content Creator",
     year: "2024",
     description:
       "Live event hosting bridging brand messaging with culinary demonstrations.",
-    awards: "Brand Event",
+    awards: "Hosting",
     imageUrl: "ajinomoto.png",
     linkUrl:
       "https://www.instagram.com/reel/DIG78HqySfg/?utm_source=ig_embed&ig_rid=A7gHG8tbjjI_Bf1spu0m4bw",
   },
   {
     id: 17,
-    title: "Mober Logistics Launch",
+    title: "Mober",
     category: "Events",
     client: "Mober",
     role: "Host / Presenter",
     year: "2023",
     description:
       "Hosted a corporate milestone event for the green logistics tech startup.",
-    awards: "Corporate Event",
+    awards: "Hosting",
     imageUrl: "mober.png",
     linkUrl:
       "https://www.instagram.com/reel/DHadJcRtw4m/?utm_source=ig_embed&ig_rid=ANaeIeN0wtZzPSp8ftswG0e",
@@ -268,26 +268,26 @@ export const projectsData = [
     id: 18,
     title: "Unilab X Rose Pharmacy",
     category: "Events",
-    client: "Unilab",
+    client: "Unilab X Rose Pharmacy",
     role: "Host",
     year: "2023",
     description:
       "Facilitated a joint corporate advocacy and wellness event between two major pharmaceutical brands.",
-    awards: "Brand Event",
+    awards: "Hosting",
     imageUrl: "unilab-rose-pharmacy.png",
     linkUrl:
       "https://www.instagram.com/reel/DBdPS6AOgXp/?utm_source=ig_embed&ig_rid=An0cPpXhiRf3ng_y4zQ2LGi",
   },
   {
     id: 19,
-    title: "Grab Partner Summit",
+    title: "Grab",
     category: "Events",
     client: "Grab",
     role: "Host",
     year: "2024",
     description:
       "Engaged thousands of partner drivers and merchants at the regional Grab summit.",
-    awards: "Corporate Event",
+    awards: "Hosting",
     imageUrl: "grab.png",
     linkUrl:
       "https://www.instagram.com/reel/C6qp5dBtx8p/?utm_source=ig_embed&ig_rid=AazAAQcv36x588ktrKe8q5b",
