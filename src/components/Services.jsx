@@ -1,5 +1,32 @@
 import React, { useState } from "react";
-import { servicesData } from "../data/portfolioData";
+
+// Using local data to immediately match the brief's exact wording
+const servicesData = [
+  {
+    id: 1,
+    title: "01 — Documentary Production",
+    description:
+      "Research, development, field production, local producing, documentary production, journalism, international productions, and production support.",
+    visualType: "image",
+    mediaUrl: "01.jpg",
+  },
+  {
+    id: 2,
+    title: "02 — Content Creation",
+    description:
+      "Branded content, digital campaigns, social media content, short-form videos, video production, storytelling, and communications consultancy.",
+    visualType: "image",
+    mediaUrl: "02.jpg",
+  },
+  {
+    id: 3,
+    title: "03 — Public Speaking & Workshops",
+    description:
+      "Keynotes, journalism workshops, storytelling workshops, media training, documentary production workshops, hosting, moderation, and facilitation.",
+    visualType: "image",
+    mediaUrl: "03.jpg",
+  },
+];
 
 export default function Services() {
   const [hoveredService, setHoveredService] = useState(null);
@@ -7,8 +34,9 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative py-32 bg-transparent overflow-hidden min-h-[80vh] flex items-center"
+      className="relative py-32 bg-neutral-50 dark:bg-neutral-900 overflow-hidden min-h-[80vh] flex items-center transition-colors duration-500"
     >
+      {/* Background Media Reveal */}
       <div className="absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-1000 ease-in-out">
         {servicesData.map((service) => (
           <div
@@ -18,26 +46,25 @@ export default function Services() {
             <img
               src={service.mediaUrl}
               alt="service background"
-              className="w-full h-full object-cover opacity-15 dark:opacity-40 contrast-125 saturate-110 scale-105"
+              className="w-full h-full object-cover opacity-15 dark:opacity-30 contrast-125 saturate-110 scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white dark:from-neutral-950 dark:via-transparent dark:to-neutral-950 opacity-90"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-neutral-50 via-transparent to-neutral-50 dark:from-neutral-900 dark:via-transparent dark:to-neutral-900 opacity-90"></div>
           </div>
         ))}
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
         <div className="mb-16">
-          <span className="bg-yellow-500 text-black uppercase font-black px-3 py-1 text-sm tracking-widest inline-block mb-3 shadow-sm shadow-yellow-500/20">
-            Capabilities
+          <span className="bg-yellow-500 text-black uppercase font-black px-3 py-1 text-[10px] tracking-[0.2em] inline-block mb-4 shadow-sm">
+            What We Do
           </span>
-          <h2 className="text-4xl sm:text-6xl font-black text-neutral-950 dark:text-white uppercase tracking-tight drop-shadow-xl">
-            What we do best
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-neutral-950 dark:text-white uppercase tracking-tight drop-shadow-xl">
+            Our Expertise
           </h2>
         </div>
 
         <div className="flex flex-col border-t border-neutral-300 dark:border-neutral-800">
           {servicesData.map((service) => (
-            // The straight divider line now wraps the hover box
             <div
               key={service.id}
               className="border-b border-neutral-300 dark:border-neutral-800 py-2"
@@ -45,21 +72,29 @@ export default function Services() {
               <div
                 onMouseEnter={() => setHoveredService(service.id)}
                 onMouseLeave={() => setHoveredService(null)}
-                // Restored rounded-3xl and applied the rich yellow gradient
-                className={`group flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-16 py-8 px-8 transition-all duration-500 ease-in-out cursor-pointer rounded-3xl ${
+                className={`group flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-16 py-10 px-8 transition-all duration-500 ease-in-out rounded-3xl ${
                   hoveredService === service.id
-                    ? "bg-gradient-to-r from-yellow-400/90 to-yellow-600/90 scale-[1.01]"
-                    : "hover:bg-gradient-to-r hover:from-yellow-400/90 hover:to-yellow-600/90 hover:scale-[1.01]"
+                    ? "bg-gradient-to-r from-yellow-400 to-yellow-600 scale-[1.01] shadow-2xl"
+                    : "hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600 hover:scale-[1.01] hover:shadow-2xl"
                 }`}
               >
-                <div className="flex items-center md:w-[55%]">
-                  <h3 className="text-3xl sm:text-4xl font-black text-neutral-900 dark:text-neutral-100 group-hover:text-black transition-colors duration-500 uppercase drop-shadow-md group-hover:drop-shadow-none">
+                <div className="md:w-[50%]">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-neutral-900 dark:text-neutral-100 group-hover:text-black transition-colors duration-500 uppercase drop-shadow-md group-hover:drop-shadow-none">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-neutral-800 dark:text-neutral-300 group-hover:text-black/90 text-sm md:w-[35%] leading-relaxed font-bold transition-colors duration-500 drop-shadow-md group-hover:drop-shadow-none">
-                  {service.description}
-                </p>
+
+                <div className="md:w-[50%] flex flex-col items-start md:items-end text-left md:text-right">
+                  <p className="text-neutral-700 dark:text-neutral-300 group-hover:text-black/90 text-sm leading-relaxed font-bold transition-colors duration-500 drop-shadow-md group-hover:drop-shadow-none mb-6">
+                    {service.description}
+                  </p>
+                  <a
+                    href="#work"
+                    className="inline-block bg-neutral-950 dark:bg-white text-white dark:text-black group-hover:bg-black group-hover:text-white px-6 py-3 text-[10px] font-black uppercase tracking-[0.2em] transition-colors shadow-lg cursor-pointer"
+                  >
+                    Learn More / View Projects
+                  </a>
+                </div>
               </div>
             </div>
           ))}
