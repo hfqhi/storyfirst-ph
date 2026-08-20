@@ -2,8 +2,6 @@ export const identityData = {
   brandName: "STORYFIRST PH",
   tagline: "STORIES FIRST. ALWAYS.",
   subTagline:
-    "A Philippines-based communications consultancy and production company specializing in documentary production, content creation, and public speaking/workshops.",
-  aboutText:
     "StoryFirst PH believes meaningful communication begins with understanding people, context, and the story that needs to be told.",
 };
 
