@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hfqhi.github.io/storyfirst-ph/sitemap.xml
