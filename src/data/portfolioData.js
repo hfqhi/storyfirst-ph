@@ -35,17 +35,14 @@ export const servicesData = [
 ];
 
 export const projectsData = [
-  // --- DOCUMENTARIES ---
+  // --- DOCUMENTARIES (Category: Documentaries) ---
   {
     id: 1,
     title: "Les Petits Forcats de l'or",
     category: "Documentaries",
+    badge: "TV Documentary",
     client: "ARTE of Paris, France",
     role: "News Fixer, Local Producer, Researcher",
-    year: "2023",
-    description:
-      "International documentary production support covering illegal gold mining operations.",
-    awards: "TV Documentary", // Restored to Canva data
     imageUrl: "les-petits.png",
     linkUrl: "https://www.youtube.com/watch?v=wMGzsvO6lWY",
   },
@@ -53,12 +50,9 @@ export const projectsData = [
     id: 2,
     title: "Wombs for Rent",
     category: "Documentaries",
+    badge: "Online Documentary",
     client: "GMA Network of Philippines",
     role: "Reporter, Researcher, Director, Edit Supervisor, Writer",
-    year: "2023",
-    description:
-      "An investigative documentary exploring the underground commercial surrogacy industry in the Philippines.",
-    awards: "Online Documentary", // Restored to Canva data
     imageUrl: "wombs-for-rent.png",
     linkUrl: "https://www.youtube.com/watch?v=922MzLxNEiA",
   },
@@ -66,12 +60,9 @@ export const projectsData = [
     id: 3,
     title: "Lost Sabungeros",
     category: "Documentaries",
+    badge: "Film Documentary",
     client: "GMA Public Affairs & GMA Pictures",
     role: "Co-writer and co-director",
-    year: "2024",
-    description:
-      "A feature-length investigative documentary investigating the disappearances of cockfight enthusiasts.",
-    awards: "Film Documentary", // Restored to Canva data
     imageUrl: "lost-sabungeros.png",
     linkUrl: "https://www.youtube.com/watch?v=Gm9D5sbbDZg",
   },
@@ -79,12 +70,9 @@ export const projectsData = [
     id: 4,
     title: "Wounds of Woes",
     category: "Documentaries",
+    badge: "Television Documentary",
     client: "GMA Network of Philippines",
     role: "Field Producer, Writer, Edit Supervisor, Director",
-    year: "2022",
-    description:
-      "A gripping television documentary highlighting severe medical conditions and lack of healthcare access.",
-    awards: "Television Documentary", // Restored to Canva data
     imageUrl: "wounds-of-woes.png",
     linkUrl: "https://www.youtube.com/watch?v=EuoOZ6zHEDM",
   },
@@ -92,12 +80,9 @@ export const projectsData = [
     id: 5,
     title: "The Negotiators",
     category: "Documentaries",
+    badge: "Documentary",
     client: "Channel News Asia of Singapore",
     role: "Assistant Producer (PH), News Fixer, Researcher",
-    year: "2021",
-    description:
-      "Asian regional documentary focusing on high-stakes crisis negotiation strategies.",
-    awards: "Documentary", // Restored to Canva data
     imageUrl: "the-negotiators.png",
     linkUrl: "https://www.youtube.com/watch?v=c08GXOLdGWM",
   },
@@ -105,12 +90,9 @@ export const projectsData = [
     id: 6,
     title: "Batas Bata",
     category: "Documentaries",
+    badge: "Television Documentary",
     client: "GMA Network of Philippines",
     role: "Field Producer, Edit Supervisor",
-    year: "2022",
-    description:
-      "An in-depth look into the juvenile justice system and youth rehabilitation in the Philippines.",
-    awards: "Television Documentary", // Restored to Canva data
     imageUrl: "batas-bata.png",
     linkUrl: "https://www.youtube.com/watch?v=rNlYVim_iIk",
   },
@@ -118,12 +100,9 @@ export const projectsData = [
     id: 7,
     title: "Hingang Malalim",
     category: "Documentaries",
+    badge: "Television Documentary",
     client: "GMA Network of Philippines",
     role: "Segment Producer, Edit Supervisor",
-    year: "2021",
-    description:
-      "A television documentary exploring respiratory illnesses and environmental health hazards.",
-    awards: "Television Documentary", // Restored to Canva data
     imageUrl: "hingang-malalim.png",
     linkUrl: "https://www.youtube.com/watch?v=9l3567pGsIA",
   },
@@ -131,193 +110,121 @@ export const projectsData = [
     id: 8,
     title: "Ang Pinanggang Anak ni Julieta",
     category: "Documentaries",
+    badge: "Documentary",
     client: "Philippine Center for Investigative Journalism",
     role: "Director, Writer, Edit Supervisor",
-    year: "2020",
-    description:
-      "A human-centered investigative documentary produced in collaboration with the PCIJ.",
-    awards: "Documentary", // Restored to Canva data
     imageUrl: "ang-pinanggang-anak-ni-julieta.png",
     linkUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
   },
+
+  // --- EVENTS HOSTING (Category: Events) ---
   {
     id: 9,
-    title: "Food Exploration Series",
-    category: "Documentaries",
-    client: "Mark Wiens",
-    role: "Local Producing & Field Production",
-    year: "2024",
-    description:
-      "Comprehensive production support and logistics for a major international food documentary series shot across the Philippines.",
-    awards: "Global Release",
-    imageUrl: "mark-wiens-placeholder.jpg",
-    linkUrl: "#",
-  },
-
-  // --- CONTENT CREATION ---
-  {
-    id: 10,
-    title: "Lazada",
-    category: "Content",
-    client: "Lazada",
-    role: "Brand Collaboration",
-    year: "2024",
-    description:
-      "High-impact digital storytelling campaign driving e-commerce engagement.",
-    awards: "Brands",
-    imageUrl: "lazada.png",
-    linkUrl: "https://www.instagram.com/p/DG-C3WchUD2/",
-  },
-  {
-    id: 11,
-    title: "Enervon",
-    category: "Content",
-    client: "Enervon",
-    role: "Brand Collaboration",
-    year: "2024",
-    description:
-      "Short-form video series focused on health, vitality, and active lifestyles.",
-    awards: "Brands",
-    imageUrl: "enervon.png",
-    linkUrl: "https://www.instagram.com/reel/DF73TjjSYMz/",
-  },
-  {
-    id: 12,
-    title: "Cyberzone",
-    category: "Content",
-    client: "Cyberzone",
-    role: "Brand Collaboration",
-    year: "2023",
-    description:
-      "Engaging digital content highlighting the latest in consumer technology and gadgets.",
-    awards: "Brands",
-    imageUrl: "cyberzone.png",
-    linkUrl: "https://www.instagram.com/p/DH2sZEcM6te/",
-  },
-
-  // --- EVENTS HOSTING & MODERATION ---
-  {
-    id: 13,
-    title: "National Presidential Summit",
-    category: "Events",
-    client: "Office of the President",
-    role: "Lead Moderator & Host",
-    year: "2024",
-    description:
-      "Facilitated high-level panel discussions and moderated the keynote dialogue involving the President of the Philippines and key executives.",
-    awards: "Government Event",
-    imageUrl: "presidential-event-placeholder.jpg",
-    linkUrl: "#",
-  },
-  {
-    id: 14,
     title: "Universal Robina",
     category: "Events",
-    client: "Universal Robina",
+    badge: "Hosting",
+    client: "", // Left blank as title serves as client
     role: "Host / Presenter",
-    year: "2023",
-    description:
-      "Anchored a major corporate gathering for one of the largest food and beverage companies in the Philippines.",
-    awards: "Hosting",
     imageUrl: "universal-robina.png",
     linkUrl:
       "https://www.facebook.com/mac.romas/videos/476702725461880/?rdid=qqNe4XUf6VyEmPsZ#",
   },
   {
-    id: 15,
+    id: 10,
     title: "Miss Universe Cebu",
     category: "Events",
-    client: "Miss Universe Philippines",
+    badge: "Hosting",
+    client: "",
     role: "Event Host",
-    year: "2024",
-    description:
-      "Hosted the prestigious regional pageant, guiding the live audience and broadcast viewers through the coronation night.",
-    awards: "Hosting",
     imageUrl: "miss-universe-cebu.png",
     linkUrl: "https://www.facebook.com/mac.romas/videos/976956220556190/?t=4",
   },
   {
-    id: 16,
+    id: 11,
     title: "Ajinomoto",
     category: "Events",
-    client: "Ajinomoto",
+    badge: "Hosting",
+    client: "",
     role: "Host / Content Creator",
-    year: "2024",
-    description:
-      "Live event hosting bridging brand messaging with culinary demonstrations.",
-    awards: "Hosting",
     imageUrl: "ajinomoto.png",
     linkUrl:
       "https://www.instagram.com/reel/DIG78HqySfg/?utm_source=ig_embed&ig_rid=A7gHG8tbjjI_Bf1spu0m4bw",
   },
   {
-    id: 17,
+    id: 12,
     title: "Mober",
     category: "Events",
-    client: "Mober",
+    badge: "Hosting",
+    client: "",
     role: "Host / Presenter",
-    year: "2023",
-    description:
-      "Hosted a corporate milestone event for the green logistics tech startup.",
-    awards: "Hosting",
     imageUrl: "mober.png",
     linkUrl:
       "https://www.instagram.com/reel/DHadJcRtw4m/?utm_source=ig_embed&ig_rid=ANaeIeN0wtZzPSp8ftswG0e",
   },
   {
-    id: 18,
+    id: 13,
     title: "Unilab X Rose Pharmacy",
     category: "Events",
-    client: "Unilab X Rose Pharmacy",
+    badge: "Hosting",
+    client: "",
     role: "Host",
-    year: "2023",
-    description:
-      "Facilitated a joint corporate advocacy and wellness event between two major pharmaceutical brands.",
-    awards: "Hosting",
     imageUrl: "unilab-rose-pharmacy.png",
     linkUrl:
       "https://www.instagram.com/reel/DBdPS6AOgXp/?utm_source=ig_embed&ig_rid=An0cPpXhiRf3ng_y4zQ2LGi",
   },
   {
-    id: 19,
+    id: 14,
     title: "Grab",
     category: "Events",
-    client: "Grab",
+    badge: "Hosting",
+    client: "",
     role: "Host",
-    year: "2024",
-    description:
-      "Engaged thousands of partner drivers and merchants at the regional Grab summit.",
-    awards: "Hosting",
     imageUrl: "grab.png",
     linkUrl:
       "https://www.instagram.com/reel/C6qp5dBtx8p/?utm_source=ig_embed&ig_rid=AazAAQcv36x588ktrKe8q5b",
   },
 
-  // --- PUBLIC SPEAKING & WORKSHOPS ---
+  // --- CONTENT CREATION (Category: Content) ---
   {
-    id: 20,
-    title: "Investigative Storytelling Masterclass",
-    category: "Workshops",
-    client: "PCIJ",
-    role: "Facilitator & Trainer",
-    year: "2024",
-    description:
-      "An intensive media training workshop for emerging journalists, focusing on ethics, field research, and documentary production.",
-    awards: "Journalism Workshop",
-    imageUrl: "workshop-placeholder-1.jpg",
-    linkUrl: "#",
+    id: 15,
+    title: "Lazada",
+    category: "Content",
+    badge: "Brands",
+    client: "",
+    role: "Brand Collaboration",
+    imageUrl: "lazada.png",
+    linkUrl: "https://www.instagram.com/p/DG-C3WchUD2/",
   },
   {
-    id: 21,
-    title: "Campus Journalism Symposium",
+    id: 16,
+    title: "Enervon",
+    category: "Content",
+    badge: "Brands",
+    client: "",
+    role: "Brand Collaboration",
+    imageUrl: "enervon.png",
+    linkUrl: "https://www.instagram.com/reel/DF73TjjSYMz/",
+  },
+  {
+    id: 17,
+    title: "Cyberzone",
+    category: "Content",
+    badge: "Brands",
+    client: "",
+    role: "Brand Collaboration",
+    imageUrl: "cyberzone.png",
+    linkUrl: "https://www.instagram.com/p/DH2sZEcM6te/",
+  },
+
+  // --- WORKSHOPS (Category: Workshops - Placeholder for future use) ---
+  {
+    id: 18,
+    title: "Investigative Storytelling Masterclass",
     category: "Workshops",
-    client: "Various Universities",
-    role: "Keynote Speaker",
-    year: "2023",
-    description:
-      "Delivered keynotes on the future of digital storytelling and the responsibilities of campus journalists in the modern media landscape.",
-    awards: "University Talk",
-    imageUrl: "workshop-placeholder-2.jpg",
+    badge: "Journalism Workshop",
+    client: "PCIJ",
+    role: "Facilitator & Trainer",
+    imageUrl: "workshop-placeholder.png",
     linkUrl: "#",
   },
 ];
