@@ -1,33 +1,34 @@
 export const identityData = {
   brandName: "STORYFIRST PH",
-  tagline: "REAL STORIES DO NOT NEED TO BE DRAMATIZED",
-  subTagline: "THEY NEED TO BE HEARD",
+  tagline: "STORIES FIRST. ALWAYS.",
+  subTagline:
+    "A Philippines-based communications consultancy and production company specializing in documentary production, content creation, and public speaking/workshops.",
   aboutText:
-    "StoryFirst PH is a media and communications organization dedicated to authentic documentary storytelling, investigative journalism, and human-centered visual narratives.",
+    "StoryFirst PH believes meaningful communication begins with understanding people, context, and the story that needs to be told.",
 };
 
 export const servicesData = [
   {
     id: 1,
-    title: "Cinematic Documentaries",
+    title: "01 — Documentary Production",
     description:
-      "End-to-end editorial vision and direction for high-impact film, television, and digital platforms.",
+      "Research, development, field production, local producing, documentary production, journalism, international productions, and production support.",
     visualType: "image",
     mediaUrl: "01.jpg",
   },
   {
     id: 2,
-    title: "Field Research & Fixing",
+    title: "02 — Content Creation",
     description:
-      "Deep-dive investigations, local fixing, and precise segment production for global news agencies.",
+      "Branded content, digital campaigns, social media content, short-form videos, video production, storytelling, and communications consultancy.",
     visualType: "image",
     mediaUrl: "02.jpg",
   },
   {
     id: 3,
-    title: "Post-Production & Narrative Editing",
+    title: "03 — Public Speaking & Workshops",
     description:
-      "Precision editing, script structuring, and visual manipulation designed to maximize human impact.",
+      "Keynotes, journalism workshops, storytelling workshops, media training, documentary production workshops, hosting, moderation, and facilitation.",
     visualType: "image",
     mediaUrl: "03.jpg",
   },
