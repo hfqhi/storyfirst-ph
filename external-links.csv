@@ -1,0 +1,43 @@
+Website Section,Item,Source/Asset,External Link,Status
+Home,Primary CTA (Work),App internal anchor,#work,Internal
+Home,Primary CTA (Contact),App internal anchor,#contact,Internal
+Featured Projects,Lost Sabungeros,public/lost-sabungeros.png,https://www.youtube.com/watch?v=Gm9D5sbbDZg,Active
+Featured Projects,Wombs for Rent,public/wombs-for-rent.png,https://www.youtube.com/watch?v=922MzLxNEiA,Active
+Featured Projects,The Negotiators,public/the-negotiators.png,https://www.youtube.com/watch?v=c08GXOLdGWM,Active
+Documentaries,Les Petits Forcats de l'or,public/les-petits.png,https://www.youtube.com/watch?v=wMGzsvO6lWY,Active
+Documentaries,Wounds of Woes,public/wounds-of-woes.png,https://www.youtube.com/watch?v=EuoOZ6zHEDM,Active
+Documentaries,Batas Bata,public/batas-bata.png,https://www.youtube.com/watch?v=rNlYVim_iIk,Active
+Documentaries,Ang Pinanggang Anak ni Julieta,public/ang-pinanggang-anak-ni-julieta.png,https://cinemata.org/embed?m=VuZv8dS6M,Active
+Documentaries,Hingang Malalim,public/hingang-malalim.png,https://www.youtube.com/watch?v=9l3567pGsIA,Active
+Documentaries,Mark Wiens collaboration,public/03.jpg,https://www.youtube.com/@MarkWiens,Active
+Content Creation,Ajinomoto Campaign,public/ajinomoto.png,https://www.instagram.com/reel/DIG78HqySfg/,Active
+Content Creation,Lazada Digital Feature,public/lazada.png,https://www.instagram.com/p/DG-C3WchUD2/,Active
+Content Creation,Cyberzone Campaign,public/cyberzone.png,https://www.instagram.com/p/DH2sZEcM6te/,Active
+Content Creation,Enervon Social Content,public/enervon.png,https://www.instagram.com/reel/DF73TjjSYMz/,Active
+Events,Miss Universe Cebu Program,public/miss-universe-cebu.png,https://www.facebook.com/mac.romas/videos/976956220556190/,Active
+Events,Universal Robina Corporate Event,public/universal-robina.png,https://www.facebook.com/mac.romas/videos/476702725461880/,Active
+Events,Government and Public Programs,public/02.jpg,https://www.officialgazette.gov.ph/,Reference
+Events,Brand Events and Advocacy Programs,public/grab.png,https://www.instagram.com/reel/C6qp5dBtx8p/,Active
+Workshops,Journalism Workshop Sessions,public/01.jpg,https://www.facebook.com/storyfirstph,Active
+Workshops,Documentary Storytelling Talks,public/03.jpg,https://www.instagram.com/storyfirstph/?hl=en,Active
+Workshops,Media Training and Facilitation,public/02.jpg,https://www.tiktok.com/@storyfirst.ph,Active
+Awards,International Emmy Awards,public/storyfirst-icon.png,https://www.iemmys.tv/,Active
+Awards,New York Festivals TV & Film Awards,public/storyfirst-icon.png,https://tvfilm.newyorkfestivals.com/,Active
+Awards,DIG Awards,public/storyfirst-icon.png,https://dig-awards.org/,Active
+Awards,FIGRA,public/storyfirst-icon.png,https://www.figra.fr/,Active
+Clients & Collaborators,GMA,public/storyfirst-icon.png,https://www.gmanetwork.com/,Active
+Clients & Collaborators,Channel NewsAsia,public/the-negotiators.png,https://www.channelnewsasia.com/,Active
+Clients & Collaborators,ARTE,public/les-petits.png,https://www.arte.tv/,Active
+Clients & Collaborators,PCIJ,public/ang-pinanggang-anak-ni-julieta.png,https://pcij.org/,Active
+Clients & Collaborators,Lazada,public/lazada.png,https://www.lazada.com.ph/,Active
+Clients & Collaborators,Ajinomoto,public/ajinomoto.png,https://www.ajinomoto.com.ph/,Active
+Clients & Collaborators,Unilab,public/unilab-rose-pharmacy.png,https://www.unilab.com.ph/,Active
+Clients & Collaborators,Grab,public/grab.png,https://www.grab.com/ph/,Active
+Clients & Collaborators,DOST,public/storyfirst-icon.png,https://www.dost.gov.ph/,Active
+Clients & Collaborators,DepEd,public/storyfirst-icon.png,https://www.deped.gov.ph/,Active
+Clients & Collaborators,European Union,public/storyfirst-icon.png,https://european-union.europa.eu/,Active
+Clients & Collaborators,Sault College,public/storyfirst-icon.png,https://www.saultcollege.ca/,Active
+Contact,Facebook,App social links,https://www.facebook.com/storyfirstph,Active
+Contact,Instagram,App social links,https://www.instagram.com/storyfirstph/?hl=en,Active
+Contact,TikTok,App social links,https://www.tiktok.com/@storyfirst.ph,Active
+Contact,LinkedIn,App social links,https://www.linkedin.com/,Needs specific StoryFirst profile
