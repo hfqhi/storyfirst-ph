@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About"; // New About Section
 import Services from "./components/Services";
 import ProjectsGallery from "./components/ProjectsGallery";
-import Founder from "./components/Founder";
+import Founder from "./components/Founder"; // Moved down temporarily
 import Partnerships from "./components/Partnerships";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -39,9 +40,10 @@ export default function App() {
         <Navbar isDark={isDark} toggleTheme={toggleTheme} />
         <main>
           <Hero />
-          <Founder />
+          <About /> {/* Integrated directly below Hero */}
           <Services />
           <ProjectsGallery />
+          <Founder /> {/* Kept temporarily until we build the Team section */}
           <Partnerships />
           <Contact />
         </main>
