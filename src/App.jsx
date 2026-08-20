@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About"; // New About Section
+import About from "./components/About";
 import Services from "./components/Services";
 import ProjectsGallery from "./components/ProjectsGallery";
-import Founder from "./components/Founder"; // Moved down temporarily
-import Partnerships from "./components/Partnerships";
+// import Founder from "./components/Founder"; // Commented out for now
+// import Partnerships from "./components/Partnerships"; // Commented out for now
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -26,7 +26,6 @@ export default function App() {
 
   return (
     <div className="select-none bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white min-h-screen selection:bg-yellow-500 selection:text-black transition-colors duration-500 relative">
-      {/* Fixed blend modes for Light and Dark modes */}
       <div
         className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-30 mix-blend-multiply dark:invert dark:mix-blend-screen dark:opacity-15 transition-all duration-500"
         style={{
@@ -40,11 +39,10 @@ export default function App() {
         <Navbar isDark={isDark} toggleTheme={toggleTheme} />
         <main>
           <Hero />
-          <About /> {/* Integrated directly below Hero */}
+          <About />
           <Services />
           <ProjectsGallery />
-          <Founder /> {/* Kept temporarily until we build the Team section */}
-          <Partnerships />
+          {/* We will add <Awards />, <Clients />, and <Team /> here next! */}
           <Contact />
         </main>
         <Footer />

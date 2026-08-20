@@ -411,3 +411,28 @@ export const clientsData = {
   organizations: ["European Union", "ChildFund", "Miss Universe Philippines"],
   institutions: ["DepEd", "DOST", "Sault College"],
 };
+
+export const partnershipsData = [
+  "Universal Robina",
+  "Thomson Reuters",
+  "Miss Universe Philippines",
+  "UNILAB",
+  "SM Seaside City",
+  "DepEd",
+  "DOST",
+  "Enervon",
+  "Selecta",
+  "Arte",
+  "European Union",
+  "McDonald's",
+  "Lazada",
+  "Ajinomoto",
+  "Puregold",
+  "GMA",
+  "ChildFund",
+  "Sault College",
+  "inDrive",
+  "Grab",
+  "Channel NewsAsia",
+  "PCIJ",
+];
