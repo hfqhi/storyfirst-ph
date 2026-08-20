@@ -5,9 +5,13 @@ export default function Navbar({ isDark, toggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
     { name: "Work", href: "#work" },
     { name: "Services", href: "#services" },
-    { name: "Founder", href: "#founder" },
+    { name: "Awards", href: "#awards" },
+    { name: "Advocacies", href: "#advocacies" },
+    { name: "Team", href: "#team" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -15,7 +19,7 @@ export default function Navbar({ isDark, toggleTheme }) {
     <nav className="fixed top-0 left-0 w-full bg-white/90 dark:bg-neutral-950/90 backdrop-blur-md z-40 border-b border-neutral-200 dark:border-neutral-900 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <a
-          href="#identity"
+          href="#hero"
           className="flex flex-col text-black dark:text-white leading-[0.85] tracking-tighter transition-colors w-fit"
         >
           <span className="text-4xl font-black uppercase tracking-tight">
@@ -31,7 +35,7 @@ export default function Navbar({ isDark, toggleTheme }) {
           </div>
         </a>
 
-        <div className="hidden md:flex items-center gap-10 text-sm font-black uppercase tracking-[0.1em]">
+        <div className="hidden lg:flex items-center gap-8 text-xs font-black uppercase tracking-[0.1em]">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -43,17 +47,15 @@ export default function Navbar({ isDark, toggleTheme }) {
             </a>
           ))}
 
-          {/* Added cursor-pointer to desktop theme toggle */}
           <button
             onClick={toggleTheme}
             className="ml-4 p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-black dark:text-white cursor-pointer"
           >
-            {isDark ? <Sun size={20} /> : <Moon size={20} />}
+            {isDark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
         </div>
 
-        <div className="md:hidden flex items-center gap-4 text-black dark:text-white">
-          {/* Added cursor-pointer to mobile theme toggle */}
+        <div className="lg:hidden flex items-center gap-4 text-black dark:text-white">
           <button onClick={toggleTheme} className="p-2 cursor-pointer">
             {isDark ? <Sun size={24} /> : <Moon size={24} />}
           </button>
@@ -67,7 +69,7 @@ export default function Navbar({ isDark, toggleTheme }) {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-6 py-6 flex flex-col gap-4 text-center font-bold uppercase tracking-widest">
+        <div className="lg:hidden bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-6 py-6 flex flex-col gap-4 text-center font-bold uppercase tracking-widest">
           {navLinks.map((link) => (
             <a
               key={link.name}
