@@ -17,11 +17,7 @@ export default function Hero() {
           playsInline
           className="w-full h-full object-cover opacity-80 contrast-125 saturate-110"
         >
-          {/* Use Vite's BASE_URL to safely route to the public folder on GitHub pages */}
-          <source
-            src={`${import.meta.env.BASE_URL}videos/storyfirst-clip.mp4`}
-            type="video/mp4"
-          />
+          <source src="./videos/storyfirst-clip.mp4" type="video/mp4" />
         </video>
       </div>
 
