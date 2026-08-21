@@ -10,7 +10,7 @@ export const identityData = {
 export const servicesData = [
   {
     id: 1,
-    title: "01 — Documentary Production",
+    title: "01 / Documentary Production",
     description:
       "Research, development, field production, local producing, documentary production, journalism, international productions, and production support.",
     visualType: "image",
@@ -18,7 +18,7 @@ export const servicesData = [
   },
   {
     id: 2,
-    title: "02 — Content Creation",
+    title: "02 / Content Creation",
     description:
       "Branded content, digital campaigns, social media content, short-form videos, video production, storytelling, and communications consultancy.",
     visualType: "image",
@@ -26,7 +26,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    title: "03 — Public Speaking & Workshops",
+    title: "03 / Public Speaking & Workshops",
     description:
       "Keynotes, journalism workshops, storytelling workshops, media training, documentary production workshops, hosting, moderation, and facilitation.",
     visualType: "image",
@@ -35,14 +35,17 @@ export const servicesData = [
 ];
 
 export const projectsData = [
-  // --- DOCUMENTARIES (Category: Documentaries) ---
+  // --- DOCUMENTARIES ---
   {
     id: 1,
-    title: "Les Petits Forcats de l'or",
+    title: "Philippines: Les Petits Forcats de l'or",
     category: "Documentaries",
     badge: "TV Documentary",
     client: "ARTE of Paris, France",
     role: "News Fixer, Local Producer, Researcher",
+    year: "2024",
+    shortDescription:
+      "An international investigative documentary exploring the harsh realities of small-scale gold mining.",
     imageUrl: "les-petits.png",
     linkUrl: "https://www.youtube.com/watch?v=wMGzsvO6lWY",
   },
@@ -53,6 +56,9 @@ export const projectsData = [
     badge: "Online Documentary",
     client: "GMA Network of Philippines",
     role: "Reporter, Researcher, Director, Edit Supervisor, Writer",
+    year: "2024",
+    shortDescription:
+      "A deep dive into the underground commercial surrogacy industry in the Philippines.",
     imageUrl: "wombs-for-rent.png",
     linkUrl: "https://www.youtube.com/watch?v=922MzLxNEiA",
   },
@@ -61,162 +67,228 @@ export const projectsData = [
     title: "Lost Sabungeros",
     category: "Documentaries",
     badge: "Film Documentary",
-    client: "GMA Public Affairs & GMA Pictures",
+    client: "GMA Public Affairs and GMA Pictures",
     role: "Co-writer and co-director",
+    year: "2024",
+    shortDescription:
+      "A feature-length investigative film unravelling the mystery of missing cockfighters.",
     imageUrl: "lost-sabungeros.png",
     linkUrl: "https://www.youtube.com/watch?v=Gm9D5sbbDZg",
   },
   {
     id: 4,
-    title: "Wounds of Woes",
+    title: "Kapuso Mo, Jessica Soho: Wounds of Woes",
     category: "Documentaries",
     badge: "Television Documentary",
     client: "GMA Network of Philippines",
     role: "Field Producer, Writer, Edit Supervisor, Director",
+    year: "2023",
+    shortDescription:
+      "An award-winning documentary highlighting critical health and social issues in marginalized communities.",
     imageUrl: "wounds-of-woes.png",
     linkUrl: "https://www.youtube.com/watch?v=EuoOZ6zHEDM",
   },
   {
     id: 5,
-    title: "The Negotiators",
+    title: "Channel News Asia: The Negotiators",
     category: "Documentaries",
     badge: "Documentary",
     client: "Channel News Asia of Singapore",
-    role: "Assistant Producer (PH), News Fixer, Researcher",
+    role: "Assistant Producer for the Philippines, News Fixer, Researcher",
+    year: "2024",
+    shortDescription:
+      "A regional series detailing the high-stakes world of crisis negotiation.",
     imageUrl: "the-negotiators.png",
     linkUrl: "https://www.youtube.com/watch?v=c08GXOLdGWM",
   },
   {
     id: 6,
-    title: "Batas Bata",
+    title: "Batas Bata (Child's Game)",
     category: "Documentaries",
     badge: "Television Documentary",
     client: "GMA Network of Philippines",
     role: "Field Producer, Edit Supervisor",
+    year: "2024",
+    shortDescription:
+      "A poignant look into the juvenile justice system and children in conflict with the law.",
     imageUrl: "batas-bata.png",
     linkUrl: "https://www.youtube.com/watch?v=rNlYVim_iIk",
   },
   {
     id: 7,
-    title: "Hingang Malalim",
+    title: "Hingang Malalim (One Deep Breath)",
     category: "Documentaries",
     badge: "Television Documentary",
     client: "GMA Network of Philippines",
     role: "Segment Producer, Edit Supervisor",
+    year: "2024",
+    shortDescription:
+      "An immersive documentary focusing on the lives of traditional free-divers.",
     imageUrl: "hingang-malalim.png",
     linkUrl: "https://www.youtube.com/watch?v=9l3567pGsIA",
   },
   {
     id: 8,
-    title: "Ang Pinanggang Anak ni Julieta",
+    title: "Ang Pinanggang Anak ni Julieta (Julieta's Beloved Child)",
     category: "Documentaries",
     badge: "Documentary",
     client: "Philippine Center for Investigative Journalism",
     role: "Director, Writer, Edit Supervisor",
+    year: "2021",
+    shortDescription:
+      "A localized, intimate narrative shedding light on maternal struggles and resilience.",
     imageUrl: "ang-pinanggang-anak-ni-julieta.png",
     linkUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
   },
+  {
+    id: 19,
+    title: "Food Travel in the Philippines",
+    category: "Documentaries",
+    badge: "International Production",
+    client: "Mark Wiens",
+    role: "Local Producer, Fixer, Research",
+    year: "2023",
+    shortDescription:
+      "Provided end-to-end local production support and logistics for international food vlogger Mark Wiens.",
+    imageUrl: "mark-wiens-placeholder.png",
+    linkUrl: "https://www.instagram.com/p/Db2o4WMAW30/",
+  },
 
-  // --- EVENTS HOSTING (Category: Events) ---
+  // --- EVENTS HOSTING ---
   {
     id: 9,
     title: "Universal Robina",
     category: "Events",
-    badge: "Hosting",
-    client: "", // Left blank as title serves as client
+    badge: "Corporate Event",
+    client: "Universal Robina Corporation",
     role: "Host / Presenter",
+    year: "2023",
+    shortDescription:
+      "Hosted the annual corporate summit for one of the largest food and beverage companies in the Philippines.",
     imageUrl: "universal-robina.png",
-    linkUrl:
-      "https://www.facebook.com/mac.romas/videos/476702725461880/?rdid=qqNe4XUf6VyEmPsZ#",
+    linkUrl: "https://www.facebook.com/mac.romas/videos/476702725461880/",
   },
   {
     id: 10,
     title: "Miss Universe Cebu",
     category: "Events",
-    badge: "Hosting",
-    client: "",
+    badge: "Festival / Pageant",
+    client: "Miss Universe Philippines",
     role: "Event Host",
+    year: "2024",
+    shortDescription:
+      "Main presenter for the regional coronation night of the Miss Universe Cebu pageant.",
     imageUrl: "miss-universe-cebu.png",
-    linkUrl: "https://www.facebook.com/mac.romas/videos/976956220556190/?t=4",
+    linkUrl: "https://www.facebook.com/mac.romas/videos/976956220556190/",
   },
   {
     id: 11,
     title: "Ajinomoto",
     category: "Events",
-    badge: "Hosting",
-    client: "",
+    badge: "Brand Event",
+    client: "Ajinomoto Philippines",
     role: "Host / Content Creator",
+    year: "2024",
+    shortDescription:
+      "Hosted a dynamic brand activation and culinary event promoting health and wellness.",
     imageUrl: "ajinomoto.png",
-    linkUrl:
-      "https://www.instagram.com/reel/DIG78HqySfg/?utm_source=ig_embed&ig_rid=A7gHG8tbjjI_Bf1spu0m4bw",
+    linkUrl: "https://www.instagram.com/reel/DIG78HqySfg/",
   },
   {
     id: 12,
     title: "Mober",
     category: "Events",
-    badge: "Hosting",
-    client: "",
+    badge: "Corporate Event",
+    client: "Mober Philippines",
     role: "Host / Presenter",
+    year: "2023",
+    shortDescription:
+      "Facilitated the official launch event for green logistics and sustainable delivery solutions.",
     imageUrl: "mober.png",
-    linkUrl:
-      "https://www.instagram.com/reel/DHadJcRtw4m/?utm_source=ig_embed&ig_rid=ANaeIeN0wtZzPSp8ftswG0e",
+    linkUrl: "https://www.instagram.com/reel/DHadJcRtw4m/",
   },
   {
     id: 13,
     title: "Unilab X Rose Pharmacy",
     category: "Events",
-    badge: "Hosting",
-    client: "",
+    badge: "Brand Activation",
+    client: "UNILAB",
     role: "Host",
+    year: "2023",
+    shortDescription:
+      "Hosted a collaborative health and wellness community event.",
     imageUrl: "unilab-rose-pharmacy.png",
-    linkUrl:
-      "https://www.instagram.com/reel/DBdPS6AOgXp/?utm_source=ig_embed&ig_rid=An0cPpXhiRf3ng_y4zQ2LGi",
+    linkUrl: "https://www.instagram.com/reel/DBdPS6AOgXp/",
   },
   {
     id: 14,
     title: "Grab",
     category: "Events",
-    badge: "Hosting",
-    client: "",
+    badge: "Corporate Event",
+    client: "Grab Philippines",
     role: "Host",
+    year: "2024",
+    shortDescription:
+      "Moderated a major partner and driver-engagement conference for Grab.",
     imageUrl: "grab.png",
-    linkUrl:
-      "https://www.instagram.com/reel/C6qp5dBtx8p/?utm_source=ig_embed&ig_rid=AazAAQcv36x588ktrKe8q5b",
+    linkUrl: "https://www.instagram.com/reel/C6qp5dBtx8p/",
+  },
+  {
+    id: 20,
+    title: "Presidential Engagement",
+    category: "Events",
+    badge: "Government Event",
+    client: "Office of the President",
+    role: "Official Host / Moderator",
+    year: "2023",
+    shortDescription:
+      "Served as the official master of ceremonies for a high-profile government program featuring the President of the Philippines.",
+    imageUrl: "presidential-placeholder.png",
+    linkUrl: "#",
   },
 
-  // --- CONTENT CREATION (Category: Content) ---
+  // --- CONTENT CREATION ---
   {
     id: 15,
-    title: "Lazada",
+    title: "Lazada 11.11 Campaign",
     category: "Content",
-    badge: "Brands",
-    client: "",
-    role: "Brand Collaboration",
+    badge: "Digital Campaign",
+    client: "Lazada Philippines",
+    role: "Content Creator / Strategist",
+    year: "2023",
+    shortDescription:
+      "Developed and executed a high-conversion social media campaign for Lazada's mega sale.",
     imageUrl: "lazada.png",
     linkUrl: "https://www.instagram.com/p/DG-C3WchUD2/",
   },
   {
     id: 16,
-    title: "Enervon",
+    title: "Enervon Daily Energy",
     category: "Content",
-    badge: "Brands",
-    client: "",
-    role: "Brand Collaboration",
+    badge: "Branded Content",
+    client: "Enervon",
+    role: "Brand Collaborator / Producer",
+    year: "2024",
+    shortDescription:
+      "Produced short-form digital video content highlighting active lifestyles.",
     imageUrl: "enervon.png",
     linkUrl: "https://www.instagram.com/reel/DF73TjjSYMz/",
   },
   {
     id: 17,
-    title: "Cyberzone",
+    title: "Cyberzone Tech Review",
     category: "Content",
-    badge: "Brands",
-    client: "",
-    role: "Brand Collaboration",
+    badge: "Social Media Content",
+    client: "SM Cyberzone",
+    role: "Content Creator",
+    year: "2024",
+    shortDescription:
+      "Created engaging, tech-focused reels for SM Cyberzone's official social channels.",
     imageUrl: "cyberzone.png",
     linkUrl: "https://www.instagram.com/p/DH2sZEcM6te/",
   },
 
-  // --- WORKSHOPS (Category: Workshops - Placeholder for future use) ---
+  // --- WORKSHOPS ---
   {
     id: 18,
     title: "Investigative Storytelling Masterclass",
@@ -224,61 +296,118 @@ export const projectsData = [
     badge: "Journalism Workshop",
     client: "PCIJ",
     role: "Facilitator & Trainer",
+    year: "2024",
+    shortDescription:
+      "Led an intensive workshop for emerging journalists on ethical and rigorous investigative storytelling.",
     imageUrl: "workshop-placeholder.png",
     linkUrl: "#",
   },
 ];
 
-// --- AWARDS DATA (NEW) ---
+// --- AWARDS DATA ---
 export const awardsData = [
   {
     id: 1,
     title: "International Emmy Awards",
-    recognition: "Nominee",
-    project: "Wombs for Rent",
-    role: "Reporter / Director",
+    recognition: "Nominee for Current Affairs (2025)",
+    project: "Philippines: Les Petits Forcats de l'or",
+    role: "News Fixer, Local Producer, Researcher",
     logoUrl: "emmy-logo-placeholder.png",
-    verificationLink: "#",
+    verificationLink: "https://www.iemmys.tv/",
   },
   {
     id: 2,
     title: "New York Festivals TV & Film Awards",
-    recognition: "Gold Medal",
-    project: "Wounds of Woes",
-    role: "Field Producer / Director",
+    recognition: "Gold World Medalist (2024)",
+    project: "Batas Bata (Child's Game)",
+    role: "Field Producer, Edit Supervisor",
     logoUrl: "ny-festivals-placeholder.png",
-    verificationLink: "#",
+    verificationLink: "https://tvfilm.newyorkfestivals.com/",
   },
   {
     id: 3,
-    title: "Catholic Mass Media Award",
-    recognition: "Finalist",
-    project: "Batas Bata",
-    role: "Field Producer",
-    logoUrl: "cmma-logo-placeholder.png",
-    verificationLink: "#",
+    title: "New York Festivals TV & Film Awards",
+    recognition: "Gold Winner for Health Documentary (2023)",
+    project: "Kapuso Mo, Jessica Soho: Wounds of Woes",
+    role: "Field Producer, Writer, Edit Supervisor, Director",
+    logoUrl: "ny-festivals-placeholder.png",
+    verificationLink: "https://tvfilm.newyorkfestivals.com/",
   },
   {
     id: 4,
-    title: "DIG Awards (Italy)",
-    recognition: "Official Selection",
-    project: "Documentary Feature",
-    role: "Producer",
-    logoUrl: "dig-awards-placeholder.png",
-    verificationLink: "#",
+    title: "New York Festivals TV & Film Awards",
+    recognition: "Silver World Medalist (2024)",
+    project: "Hingang Malalim (One Deep Breath)",
+    role: "Segment Producer, Edit Supervisor",
+    logoUrl: "ny-festivals-placeholder.png",
+    verificationLink: "https://tvfilm.newyorkfestivals.com/",
   },
   {
     id: 5,
+    title: "Asian Academy Creative Awards",
+    recognition: "National Winner Best Documentary (One-Off)",
+    project: "Lost Sabungeros",
+    role: "Co-writer and co-director",
+    logoUrl: "aaca-logo-placeholder.png",
+    verificationLink: "#",
+  },
+  {
+    id: 6,
+    title: "ContentAsia Awards",
+    recognition: "Best Current Affairs Programme Made in Asia (2024)",
+    project: "Channel News Asia: The Negotiators",
+    role: "Assistant Producer (PH), News Fixer, Researcher",
+    logoUrl: "contentasia-logo-placeholder.png",
+    verificationLink: "#",
+  },
+  {
+    id: 7,
+    title: "Catholic Mass Media Awards",
+    recognition: "Winner for Best Investigative Story (2024)",
+    project: "Wombs for Rent",
+    role: "Reporter, Researcher, Director, Edit Supervisor, Writer",
+    logoUrl: "cmma-logo-placeholder.png",
+    verificationLink: "https://cmma.ph/",
+  },
+  {
+    id: 8,
+    title: "Cannes Corporate Media & TV Awards",
+    recognition: "Awardee",
+    project: "Batas Bata & Hingang Malalim",
+    role: "Field/Segment Producer, Edit Supervisor",
+    logoUrl: "cannes-corporate-placeholder.png",
+    verificationLink: "#",
+  },
+  {
+    id: 9,
     title: "FIGRA (Paris)",
-    recognition: "Official Selection",
-    project: "Documentary Feature",
-    role: "Producer",
+    recognition: "Nominee (2024)",
+    project: "Philippines: Les Petits Forcats de l'or",
+    role: "News Fixer, Local Producer, Researcher",
     logoUrl: "figra-logo-placeholder.png",
+    verificationLink: "https://www.figra.fr/",
+  },
+  {
+    id: 10,
+    title: "DIG Awards (Italy)",
+    recognition: "Nominee (2024)",
+    project: "Philippines: Les Petits Forcats de l'or",
+    role: "News Fixer, Local Producer, Researcher",
+    logoUrl: "dig-awards-placeholder.png",
+    verificationLink: "https://dig-awards.org/",
+  },
+  {
+    id: 11,
+    title: "Gawad Alternatibo (Cultural Center of the Philippines)",
+    recognition: "Best Regional Entry (2021)",
+    project: "Ang Pinanggang Anak ni Julieta",
+    role: "Director, Writer, Edit Supervisor",
+    logoUrl: "gawad-alternatibo-placeholder.png",
     verificationLink: "#",
   },
 ];
 
-// --- TEAM DATA (NEW) ---
+// --- TEAM DATA ---
 export const teamData = [
   {
     id: 1,
@@ -289,20 +418,32 @@ export const teamData = [
   {
     id: 2,
     name: "Amy",
-    position: "[Position — placeholder]",
+    position: "Production Manager",
     imageUrl: "amy-placeholder.jpg",
   },
   {
     id: 3,
     name: "Sarah",
-    position: "[Position — placeholder]",
+    position: "Lead Researcher",
     imageUrl: "sarah-placeholder.jpg",
   },
 ];
 
-// --- CLIENTS DATA (NEW, Categorized) ---
+// --- CLIENTS DATA ---
 export const clientsData = {
-  media: ["GMA", "Channel NewsAsia", "ARTE", "PCIJ"],
+  media: [
+    "GMA",
+    "Kapuso Mo, Jessica Soho",
+    "i Witness",
+    "The Atom Araullo Specials",
+    "The Freeman",
+    "Channel NewsAsia",
+    "France 2",
+    "The Japan News",
+    "journalismfund.eu",
+    "Scottish Documentary Institute",
+    "PCIJ",
+  ],
   brands: [
     "Universal Robina",
     "Grab",
@@ -315,13 +456,29 @@ export const clientsData = {
     "Puregold",
     "inDrive",
   ],
-  organizations: ["European Union", "ChildFund", "Miss Universe Philippines"],
+  organizations: [
+    "Thomson Reuters Foundation",
+    "Business Insider",
+    "European Union",
+    "ChildFund",
+    "Miss Universe Philippines",
+  ],
   institutions: ["DepEd", "DOST", "Sault College"],
 };
 
 export const partnershipsData = [
+  "GMA",
+  "Kapuso Mo, Jessica Soho",
+  "i Witness",
+  "Channel NewsAsia",
+  "France 2",
+  "The Japan News",
+  "Thomson Reuters Foundation",
+  "Business Insider",
+  "Scottish Documentary Institute",
+  "journalismfund.eu",
+  "PCIJ",
   "Universal Robina",
-  "Thomson Reuters",
   "Miss Universe Philippines",
   "UNILAB",
   "SM Seaside City",
@@ -335,11 +492,83 @@ export const partnershipsData = [
   "Lazada",
   "Ajinomoto",
   "Puregold",
-  "GMA",
   "ChildFund",
   "Sault College",
   "inDrive",
   "Grab",
-  "Channel NewsAsia",
-  "PCIJ",
+];
+
+// --- ADVOCACIES DATA ---
+export const advocaciesData = [
+  {
+    id: 1,
+    title: "Campus Journalism",
+    description:
+      "Empowering the next generation of truth-tellers by conducting workshops and mentoring student journalists across universities.",
+    imageUrl: "advocacy-1.jpg",
+  },
+  {
+    id: 2,
+    title: "Media Literacy",
+    description:
+      "Combating disinformation through public seminars focused on critical thinking, source verification, and responsible content consumption.",
+    imageUrl: "advocacy-2.jpg",
+  },
+  {
+    id: 3,
+    title: "Storytelling Education",
+    description:
+      "Partnering with NGOs and educational institutions to teach marginalized communities how to tell their own stories effectively.",
+    imageUrl: "advocacy-3.jpg",
+  },
+];
+
+// --- TESTIMONIALS DATA ---
+export const testimonialsData = [
+  {
+    id: 1,
+    quote:
+      "StoryFirst PH brought an unparalleled level of editorial rigor and visual excellence to our project. They don't just produce videos; they uncover the heart of the narrative.",
+    name: "Jane Doe",
+    position: "Communications Director",
+    company: "Global NGO",
+  },
+  {
+    id: 2,
+    quote:
+      "Working with this team on our international feature was seamless. Their local knowledge, logistical precision, and storytelling instincts are world-class.",
+    name: "John Smith",
+    position: "Executive Producer",
+    company: "International Broadcaster",
+  },
+  {
+    id: 3,
+    quote:
+      "An absolute professional on stage. The ability to engage the audience while managing the complex flow of a high-stakes government event was incredibly impressive.",
+    name: "Maria Santos",
+    position: "Event Organizer",
+    company: "Corporate Events Inc.",
+  },
+];
+
+// --- COLLABORATORS DATA ---
+export const collaboratorsData = [
+  {
+    id: 1,
+    name: "Mark Wiens",
+    context: "International Food Vlogger | Philippines Culinary Tour",
+    imageUrl: "collaborator-1.jpg",
+  },
+  {
+    id: 2,
+    name: "Notable Journalist",
+    context: "Investigative Partner | Wombs for Rent",
+    imageUrl: "collaborator-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Government Official",
+    context: "Keynote Speaker | Presidential Engagement",
+    imageUrl: "collaborator-3.jpg",
+  },
 ];
