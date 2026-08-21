@@ -14,7 +14,7 @@ export const servicesData = [
     description:
       "Research, development, field production, local producing, documentary production, journalism, international productions, and production support.",
     visualType: "image",
-    mediaUrl: "public/images/services/01.jpg",
+    mediaUrl: "./images/services/01.jpg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const servicesData = [
     description:
       "Branded content, digital campaigns, social media content, short-form videos, video production, storytelling, and communications consultancy.",
     visualType: "image",
-    mediaUrl: "public/images/services/02.jpg",
+    mediaUrl: "./images/services/02.jpg",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const servicesData = [
     description:
       "Keynotes, journalism workshops, storytelling workshops, media training, documentary production workshops, hosting, moderation, and facilitation.",
     visualType: "image",
-    mediaUrl: "public/images/services/03.jpg",
+    mediaUrl: "./images/services/03.jpg",
   },
 ];
 
@@ -46,7 +46,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "An international investigative documentary exploring the harsh realities of small-scale gold mining.",
-    imageUrl: "public/images/projects/les-petits.png",
+    imageUrl: "./images/projects/les-petits.png",
     linkUrl: "https://www.youtube.com/watch?v=wMGzsvO6lWY",
   },
   {
@@ -59,7 +59,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "A deep dive into the underground commercial surrogacy industry in the Philippines.",
-    imageUrl: "public/images/projects/wombs-for-rent.png",
+    imageUrl: "./images/projects/wombs-for-rent.png",
     linkUrl: "https://www.youtube.com/watch?v=922MzLxNEiA",
   },
   {
@@ -72,7 +72,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "A feature-length investigative film unravelling the mystery of missing cockfighters.",
-    imageUrl: "public/images/projects/lost-sabungeros.png",
+    imageUrl: "./images/projects/lost-sabungeros.png",
     linkUrl: "https://www.youtube.com/watch?v=Gm9D5sbbDZg",
   },
   {
@@ -85,7 +85,7 @@ export const projectsData = [
     year: "2023",
     shortDescription:
       "An award-winning documentary highlighting critical health and social issues in marginalized communities.",
-    imageUrl: "public/images/projects/wounds-of-woes.png",
+    imageUrl: "./images/projects/wounds-of-woes.png",
     linkUrl: "https://www.youtube.com/watch?v=EuoOZ6zHEDM",
   },
   {
@@ -98,7 +98,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "A regional series detailing the high-stakes world of crisis negotiation.",
-    imageUrl: "public/images/projects/the-negotiators.png",
+    imageUrl: "./images/projects/the-negotiators.png",
     linkUrl: "https://www.youtube.com/watch?v=c08GXOLdGWM",
   },
   {
@@ -111,7 +111,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "A poignant look into the juvenile justice system and children in conflict with the law.",
-    imageUrl: "public/images/projects/batas-bata.png",
+    imageUrl: "./images/projects/batas-bata.png",
     linkUrl: "https://www.youtube.com/watch?v=rNlYVim_iIk",
   },
   {
@@ -124,7 +124,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "An immersive documentary focusing on the lives of traditional free-divers.",
-    imageUrl: "public/images/projects/hingang-malalim.png",
+    imageUrl: "./images/projects/hingang-malalim.png",
     linkUrl: "https://www.youtube.com/watch?v=9l3567pGsIA",
   },
   {
@@ -137,7 +137,7 @@ export const projectsData = [
     year: "2021",
     shortDescription:
       "A localized, intimate narrative shedding light on maternal struggles and resilience.",
-    imageUrl: "public/images/projects/ang-pinanggang-anak-ni-julieta.png",
+    imageUrl: "./images/projects/ang-pinanggang-anak-ni-julieta.png",
     linkUrl: "https://cinemata.org/embed?m=VuZv8dS6M",
   },
   {
@@ -150,7 +150,7 @@ export const projectsData = [
     year: "2026",
     shortDescription:
       "Provided end-to-end local production support and logistics for international food vlogger Mark Wiens.",
-    imageUrl: "public/images/projects/mark-wiens-food-travel.png",
+    imageUrl: "./images/projects/mark-wiens-food-travel.png",
     linkUrl: "https://www.instagram.com/p/Db2o4WMAW30/",
   },
 
@@ -165,7 +165,7 @@ export const projectsData = [
     year: "2023",
     shortDescription:
       "Hosted the annual corporate summit for one of the largest food and beverage companies in the Philippines.",
-    imageUrl: "public/images/events/universal-robina.png",
+    imageUrl: "./images/events/universal-robina.png",
     linkUrl: "https://www.facebook.com/mac.romas/videos/476702725461880/",
   },
   {
@@ -178,7 +178,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "Main presenter for the regional coronation night of the Miss Universe Cebu pageant.",
-    imageUrl: "public/images/events/miss-universe-cebu.png",
+    imageUrl: "./images/events/miss-universe-cebu.png",
     linkUrl: "https://www.facebook.com/mac.romas/videos/976956220556190/",
   },
   {
@@ -191,7 +191,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "Hosted a dynamic brand activation and culinary event promoting health and wellness.",
-    imageUrl: "public/images/events/ajinomoto.png",
+    imageUrl: "./images/events/ajinomoto.png",
     linkUrl: "https://www.instagram.com/reel/DIG78HqySfg/",
   },
   {
@@ -204,7 +204,7 @@ export const projectsData = [
     year: "2023",
     shortDescription:
       "Facilitated the official launch event for green logistics and sustainable delivery solutions.",
-    imageUrl: "public/images/events/mober.png",
+    imageUrl: "./images/events/mober.png",
     linkUrl: "https://www.instagram.com/reel/DHadJcRtw4m/",
   },
   {
@@ -217,7 +217,7 @@ export const projectsData = [
     year: "2023",
     shortDescription:
       "Hosted a collaborative health and wellness community event.",
-    imageUrl: "public/images/events/unilab-rose-pharmacy.png",
+    imageUrl: "./images/events/unilab-rose-pharmacy.png",
     linkUrl: "https://www.instagram.com/reel/DBdPS6AOgXp/",
   },
   {
@@ -230,7 +230,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "Moderated a major partner and driver-engagement conference for Grab.",
-    imageUrl: "public/images/events/grab.png",
+    imageUrl: "./images/events/grab.png",
     linkUrl: "https://www.instagram.com/reel/C6qp5dBtx8p/",
   },
   {
@@ -243,7 +243,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "Served as the official master of ceremonies for a high-profile government program featuring the President of the Philippines.",
-    imageUrl: "public/images/events/president.jpg",
+    imageUrl: "./images/events/president.jpg",
     linkUrl: "https://www.youtube.com/watch?v=X0gBw0wtUEM",
   },
 
@@ -258,7 +258,7 @@ export const projectsData = [
     year: "2023",
     shortDescription:
       "Developed and executed a high-conversion social media campaign for Lazada's mega sale.",
-    imageUrl: "public/images/content/lazada.png",
+    imageUrl: "./images/content/lazada.png",
     linkUrl: "https://www.instagram.com/p/DG-C3WchUD2/",
   },
   {
@@ -271,7 +271,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "Produced short-form digital video content highlighting active lifestyles.",
-    imageUrl: "public/images/content/enervon.png",
+    imageUrl: "./images/content/enervon.png",
     linkUrl: "https://www.instagram.com/reel/DF73TjjSYMz/",
   },
   {
@@ -284,7 +284,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "Created engaging, tech-focused reels for SM Cyberzone's official social channels.",
-    imageUrl: "public/images/content/cyberzone.png",
+    imageUrl: "./images/content/cyberzone.png",
     linkUrl: "https://www.instagram.com/p/DH2sZEcM6te/",
   },
 
@@ -299,7 +299,7 @@ export const projectsData = [
     year: "2024",
     shortDescription:
       "Organized and led a media literacy roadshow to educate the public on critical thinking and media consumption.",
-    imageUrl: "public/images/workshops/media-literacy.png",
+    imageUrl: "./images/workshops/media-literacy.png",
     linkUrl: "https://www.facebook.com/share/v/19CpHjocDR/",
   },
 ];
@@ -312,7 +312,7 @@ export const awardsData = [
     recognition: "Nominee for Current Affairs (2025)",
     project: "Philippines: Les Petits Forcats de l'or",
     role: "News Fixer, Local Producer, Researcher",
-    logoUrl: "public/images/awards/emmy-logo-placeholder.png",
+    logoUrl: "./images/awards/emmy-logo-placeholder.png",
     verificationLink: "https://www.iemmys.tv/",
   },
   {
@@ -321,7 +321,7 @@ export const awardsData = [
     recognition: "Gold World Medalist (2024)",
     project: "Batas Bata (Child's Game)",
     role: "Field Producer, Edit Supervisor",
-    logoUrl: "public/images/awards/ny-festivals-placeholder.png",
+    logoUrl: "./images/awards/ny-festivals-placeholder.png",
     verificationLink: "https://tvfilm.newyorkfestivals.com/",
   },
   {
@@ -330,7 +330,7 @@ export const awardsData = [
     recognition: "Gold Winner for Health Documentary (2023)",
     project: "Kapuso Mo, Jessica Soho: Wounds of Woes",
     role: "Field Producer, Writer, Edit Supervisor, Director",
-    logoUrl: "public/images/awards/ny-festivals-placeholder.png",
+    logoUrl: "./images/awards/ny-festivals-placeholder.png",
     verificationLink: "https://tvfilm.newyorkfestivals.com/",
   },
   {
@@ -339,7 +339,7 @@ export const awardsData = [
     recognition: "Silver World Medalist (2024)",
     project: "Hingang Malalim (One Deep Breath)",
     role: "Segment Producer, Edit Supervisor",
-    logoUrl: "public/images/awards/ny-festivals-placeholder.png",
+    logoUrl: "./images/awards/ny-festivals-placeholder.png",
     verificationLink: "https://tvfilm.newyorkfestivals.com/",
   },
   {
@@ -348,7 +348,7 @@ export const awardsData = [
     recognition: "National Winner Best Documentary (One-Off)",
     project: "Lost Sabungeros",
     role: "Co-writer and co-director",
-    logoUrl: "public/images/awards/aaca-logo-placeholder.png",
+    logoUrl: "./images/awards/aaca-logo-placeholder.png",
     verificationLink: "#",
   },
   {
@@ -357,7 +357,7 @@ export const awardsData = [
     recognition: "Best Current Affairs Programme Made in Asia (2024)",
     project: "Channel News Asia: The Negotiators",
     role: "Assistant Producer (PH), News Fixer, Researcher",
-    logoUrl: "public/images/awards/contentasia-logo-placeholder.png",
+    logoUrl: "./images/awards/contentasia-logo-placeholder.png",
     verificationLink: "#",
   },
   {
@@ -366,7 +366,7 @@ export const awardsData = [
     recognition: "Winner for Best Investigative Story (2024)",
     project: "Wombs for Rent",
     role: "Reporter, Researcher, Director, Edit Supervisor, Writer",
-    logoUrl: "public/images/awards/cmma-logo-placeholder.png",
+    logoUrl: "./images/awards/cmma-logo-placeholder.png",
     verificationLink: "https://cmma.ph/",
   },
   {
@@ -375,7 +375,7 @@ export const awardsData = [
     recognition: "Awardee",
     project: "Batas Bata & Hingang Malalim",
     role: "Field/Segment Producer, Edit Supervisor",
-    logoUrl: "public/images/awards/cannes-corporate-placeholder.png",
+    logoUrl: "./images/awards/cannes-corporate-placeholder.png",
     verificationLink: "#",
   },
   {
@@ -384,7 +384,7 @@ export const awardsData = [
     recognition: "Nominee (2024)",
     project: "Philippines: Les Petits Forcats de l'or",
     role: "News Fixer, Local Producer, Researcher",
-    logoUrl: "public/images/awards/figra-logo-placeholder.png",
+    logoUrl: "./images/awards/figra-logo-placeholder.png",
     verificationLink: "https://www.figra.fr/",
   },
   {
@@ -393,7 +393,7 @@ export const awardsData = [
     recognition: "Nominee (2024)",
     project: "Philippines: Les Petits Forcats de l'or",
     role: "News Fixer, Local Producer, Researcher",
-    logoUrl: "public/images/awards/dig-awards-placeholder.png",
+    logoUrl: "./images/awards/dig-awards-placeholder.png",
     verificationLink: "https://dig-awards.org/",
   },
   {
@@ -402,7 +402,7 @@ export const awardsData = [
     recognition: "Best Regional Entry (2021)",
     project: "Ang Pinanggang Anak ni Julieta",
     role: "Director, Writer, Edit Supervisor",
-    logoUrl: "public/images/awards/gawad-alternatibo-placeholder.png",
+    logoUrl: "./images/awards/gawad-alternatibo-placeholder.png",
     verificationLink: "#",
   },
 ];
@@ -413,19 +413,19 @@ export const teamData = [
     id: 1,
     name: "Marco Romas",
     position: "Founder / Content Producer",
-    imageUrl: "public/images/team/marco.png",
+    imageUrl: "./images/team/marco.png",
   },
   {
     id: 2,
     name: "Amy",
     position: "#",
-    imageUrl: "public/images/team/amy-placeholder.jpg",
+    imageUrl: "./images/team/amy-placeholder.jpg",
   },
   {
     id: 3,
     name: "Sarah Cabalhug",
     position: "#",
-    imageUrl: "public/images/team/sarah.jpg",
+    imageUrl: "./images/team/sarah.jpg",
   },
 ];
 
@@ -505,21 +505,21 @@ export const advocaciesData = [
     title: "Campus Journalism",
     description:
       "Empowering the next generation of truth-tellers by conducting workshops and mentoring student journalists across universities.",
-    imageUrl: "public/images/advocacies/advocacy-1.jpg",
+    imageUrl: "./images/advocacies/advocacy-1.jpg",
   },
   {
     id: 2,
     title: "Media Literacy",
     description:
       "Combating disinformation through public seminars focused on critical thinking, source verification, and responsible content consumption.",
-    imageUrl: "public/images/advocacies/advocacy-2.jpg",
+    imageUrl: "./images/advocacies/advocacy-2.jpg",
   },
   {
     id: 3,
     title: "Storytelling Education",
     description:
       "Partnering with NGOs and educational institutions to teach marginalized communities how to tell their own stories effectively.",
-    imageUrl: "public/images/advocacies/advocacy-3.jpg",
+    imageUrl: "./images/advocacies/advocacy-3.jpg",
   },
 ];
 
@@ -557,18 +557,18 @@ export const collaboratorsData = [
     id: 1,
     name: "Mark Wiens",
     context: "International Food Vlogger | Philippines Culinary Tour",
-    imageUrl: "public/images/collaborators/mark-wiens.jpg",
+    imageUrl: "./images/collaborators/mark-wiens.jpg",
   },
   {
     id: 2,
     name: "Atom Araullo",
     context: "Journalist | Media Literacy Roadshow",
-    imageUrl: "public/images/collaborators/atom-araullo.jpg",
+    imageUrl: "./images/collaborators/atom-araullo.jpg",
   },
   {
     id: 3,
     name: "Sarah Geronimo",
     context: "Singer | Universal Robina",
-    imageUrl: "public/images/collaborators/sarah-geronimo.jpg",
+    imageUrl: "./images/collaborators/sarah-geronimo.jpg",
   },
 ];
