@@ -1,13 +1,24 @@
 import React, { useState } from "react";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function Contact() {
   const [isSent, setIsSent] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    category: "Documentary / Production",
     message: "",
   });
+
+  const inquiryCategories = [
+    "Documentary / Production",
+    "Content Creation",
+    "Events Hosting",
+    "Workshops / Speaking",
+    "Partnerships",
+    "Media / Press",
+    "Other Inquiries",
+  ];
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,107 +27,183 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSent(true);
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      category: "Documentary / Production",
+      message: "",
+    });
     setTimeout(() => setIsSent(false), 3000);
   };
 
   return (
     <section
       id="contact"
-      className="py-20 bg-neutral-50 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 px-6 transition-colors duration-500"
+      className="py-24 bg-neutral-50 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 px-6 transition-colors duration-500"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div>
-          <span className="bg-yellow-500 text-black uppercase font-black px-3 py-1 text-sm tracking-widest inline-block mb-3">
-            Get In Touch
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        {/* Left Column: Direct Info & Editorial Pitch */}
+        <div className="lg:col-span-5 space-y-6">
+          <span className="bg-yellow-500 text-black uppercase font-black px-3 py-1 text-[10px] tracking-[0.2em] inline-block shadow-sm">
+            Work With StoryFirst PH
           </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-neutral-950 dark:text-white uppercase tracking-tight">
-            Let's Tell Your Story
+
+          <h2 className="text-4xl sm:text-5xl font-black text-neutral-950 dark:text-white uppercase tracking-tight leading-[0.95]">
+            Have a story, project, or idea worth telling?
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">
+              Let's work together.
+            </span>
           </h2>
-          <p className="text-neutral-600 dark:text-neutral-400 mt-4 leading-relaxed max-w-md">
-            Have a project, collaboration idea, or inquiry? Send us a message
-            and our team will get back to you promptly.
+
+          <p className="text-neutral-600 dark:text-neutral-400 text-base leading-relaxed font-medium">
+            Whether you need comprehensive documentary production, branded
+            digital campaigns, keynote speaking, or storytelling workshops, we
+            are ready to collaborate across the Philippines and internationally.
           </p>
 
-          <div className="mt-10 space-y-6 select-text">
-            <div className="flex items-center gap-6">
+          <div className="pt-6 space-y-6 select-text">
+            {/* Email Contact */}
+            <div className="flex items-center gap-5">
               <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg shadow-yellow-500/20 shrink-0">
                 <Mail size={20} strokeWidth={2.5} />
               </div>
-              <p className="text-neutral-950 dark:text-white font-medium text-lg">
-                storyfirstph@gmail.com
-              </p>
+              <div>
+                <p className="text-[10px] font-black tracking-[0.2em] uppercase text-neutral-400">
+                  Email Inquiries
+                </p>
+                <a
+                  href="mailto:storyfirstph@gmail.com"
+                  className="text-neutral-950 dark:text-white font-bold text-lg hover:text-yellow-500 transition-colors"
+                >
+                  storyfirstph@gmail.com
+                </a>
+              </div>
             </div>
 
-            <div className="flex items-center gap-6">
+            {/* Phone Contact */}
+            <div className="flex items-center gap-5">
               <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg shadow-yellow-500/20 shrink-0">
                 <Phone size={20} strokeWidth={2.5} />
               </div>
-              <p className="text-neutral-950 dark:text-white font-medium text-lg">
-                +63 928 604 4120 (Marco)
-              </p>
+              <div>
+                <p className="text-[10px] font-black tracking-[0.2em] uppercase text-neutral-400">
+                  Direct Line
+                </p>
+                <p className="text-neutral-950 dark:text-white font-bold text-lg">
+                  +63 928 604 4120
+                </p>
+              </div>
+            </div>
+
+            {/* Location Tag */}
+            <div className="flex items-center gap-5">
+              <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg shadow-yellow-500/20 shrink-0">
+                <MapPin size={20} strokeWidth={2.5} />
+              </div>
+              <div>
+                <p className="text-[10px] font-black tracking-[0.2em] uppercase text-neutral-400">
+                  Location & Base
+                </p>
+                <p className="text-neutral-950 dark:text-white font-bold text-lg">
+                  Philippines / Cebu
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <form
-          onSubmit={handleSubmit}
-          className="bg-white dark:bg-neutral-950 p-8 border border-neutral-200 dark:border-neutral-800 space-y-6 shadow-sm"
-        >
-          <div>
-            <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              required
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your Full Name"
-              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
-            />
-          </div>
-          <div>
-            <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="your@email.com"
-              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
-            />
-          </div>
-          <div>
-            <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
-              Message
-            </label>
-            <textarea
-              rows="4"
-              name="message"
-              required
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Tell us about yourself..."
-              className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:border-yellow-500 resize-none transition-colors"
-            ></textarea>
-          </div>
-          {/* Added cursor-pointer to the submit button */}
-          <button
-            type="submit"
-            className={`w-full font-extrabold uppercase py-4 text-sm tracking-wider transition-all duration-300 active:scale-95 cursor-pointer ${
-              isSent
-                ? "bg-green-500 text-white"
-                : "bg-yellow-500 hover:bg-yellow-400 text-black shadow-xl shadow-yellow-500/20"
-            }`}
+        {/* Right Column: Inquiry Form with Category Selector */}
+        <div className="lg:col-span-7">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white dark:bg-neutral-950 p-8 sm:p-10 border border-neutral-200 dark:border-neutral-800 space-y-6 shadow-xl"
           >
-            {isSent ? "MESSAGE SENT!" : "Send Message"}
-          </button>
-        </form>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
+                  Your Name *
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Juan Dela Cruz"
+                  className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3.5 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-600 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
+                  Email Address *
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="juan@company.com"
+                  className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3.5 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-600 text-sm focus:outline-none focus:border-yellow-500 transition-colors"
+                />
+              </div>
+            </div>
+
+            {/* Category Dropdown */}
+            <div>
+              <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
+                Inquiry Category *
+              </label>
+              <select
+                name="category"
+                value={formData.category}
+                onChange={handleChange}
+                className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3.5 text-neutral-900 dark:text-white text-sm focus:outline-none focus:border-yellow-500 transition-colors cursor-pointer"
+              >
+                {inquiryCategories.map((cat) => (
+                  <option key={cat} value={cat}>
+                    {cat}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-[10px] font-black tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400 mb-2">
+                Project Details / Message *
+              </label>
+              <textarea
+                rows="5"
+                name="message"
+                required
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell us about the story, timeline, or scope of your project..."
+                className="w-full bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-4 py-3.5 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-600 text-sm focus:outline-none focus:border-yellow-500 resize-none transition-colors"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className={`w-full font-black uppercase py-4 text-xs tracking-[0.2em] flex items-center justify-center gap-3 transition-all duration-300 active:scale-98 cursor-pointer ${
+                isSent
+                  ? "bg-emerald-600 text-white"
+                  : "bg-yellow-500 hover:bg-yellow-400 text-black shadow-lg shadow-yellow-500/20"
+              }`}
+            >
+              {isSent ? (
+                "INQUIRY SENT SUCCESSFULLY!"
+              ) : (
+                <>
+                  <span>Send Inquiry</span>
+                  <Send size={15} />
+                </>
+              )}
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
