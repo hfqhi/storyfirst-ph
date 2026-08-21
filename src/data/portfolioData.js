@@ -418,13 +418,13 @@ export const teamData = [
   {
     id: 2,
     name: "Amy",
-    position: "Production Manager",
+    position: "#",
     imageUrl: "amy-placeholder.jpg",
   },
   {
     id: 3,
     name: "Sarah",
-    position: "Lead Researcher",
+    position: "#",
     imageUrl: "sarah-placeholder.jpg",
   },
 ];
