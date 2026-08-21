@@ -10,7 +10,7 @@ export const identityData = {
 export const servicesData = [
   {
     id: 1,
-    title: "01 / Documentary Production",
+    title: "01 — Documentary Production",
     description:
       "Research, development, field production, local producing, documentary production, journalism, international productions, and production support.",
     visualType: "image",
@@ -18,7 +18,7 @@ export const servicesData = [
   },
   {
     id: 2,
-    title: "02 / Content Creation",
+    title: "02 — Content Creation",
     description:
       "Branded content, digital campaigns, social media content, short-form videos, video production, storytelling, and communications consultancy.",
     visualType: "image",
@@ -26,7 +26,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    title: "03 / Public Speaking & Workshops",
+    title: "03 — Public Speaking & Workshops",
     description:
       "Keynotes, journalism workshops, storytelling workshops, media training, documentary production workshops, hosting, moderation, and facilitation.",
     visualType: "image",
@@ -147,10 +147,10 @@ export const projectsData = [
     badge: "International Production",
     client: "Mark Wiens",
     role: "Local Producer, Fixer, Research",
-    year: "2023",
+    year: "2026",
     shortDescription:
       "Provided end-to-end local production support and logistics for international food vlogger Mark Wiens.",
-    imageUrl: "public/images/projects/mark-wiens-placeholder.png",
+    imageUrl: "public/images/projects/mark-wiens-food-travel.png",
     linkUrl: "https://www.instagram.com/p/Db2o4WMAW30/",
   },
 
@@ -240,11 +240,11 @@ export const projectsData = [
     badge: "Government Event",
     client: "Office of the President",
     role: "Official Host / Moderator",
-    year: "2023",
+    year: "2024",
     shortDescription:
       "Served as the official master of ceremonies for a high-profile government program featuring the President of the Philippines.",
-    imageUrl: "public/images/events/presidential-placeholder.png",
-    linkUrl: "#",
+    imageUrl: "public/images/events/president.jpg",
+    linkUrl: "https://www.youtube.com/watch?v=X0gBw0wtUEM",
   },
 
   // --- CONTENT CREATION ---
@@ -291,16 +291,16 @@ export const projectsData = [
   // --- WORKSHOPS ---
   {
     id: 18,
-    title: "Investigative Storytelling Masterclass",
+    title: "Media Literacy Roadshow",
     category: "Workshops",
     badge: "Journalism Workshop",
-    client: "PCIJ",
-    role: "Facilitator & Trainer",
+    client: "Fyt Media",
+    role: "Head Organizer / Writer / Host",
     year: "2024",
     shortDescription:
-      "Led an intensive workshop for emerging journalists on ethical and rigorous investigative storytelling.",
-    imageUrl: "public/images/workshops/workshop-placeholder.png",
-    linkUrl: "#",
+      "Organized and led a media literacy roadshow to educate the public on critical thinking and media consumption.",
+    imageUrl: "public/images/workshops/media-literacy.png",
+    linkUrl: "https://www.facebook.com/share/v/19CpHjocDR/",
   },
 ];
 
@@ -561,14 +561,14 @@ export const collaboratorsData = [
   },
   {
     id: 2,
-    name: "Notable Journalist",
-    context: "Investigative Partner | Wombs for Rent",
-    imageUrl: "public/images/collaborators/collaborator-2.jpg",
+    name: "Atom Araullo",
+    context: "Journalist | Media Literacy Roadshow",
+    imageUrl: "public/images/collaborators/atom-araullo.jpg",
   },
   {
     id: 3,
-    name: "Government Official",
-    context: "Keynote Speaker | Presidential Engagement",
-    imageUrl: "public/images/collaborators/collaborator-3.jpg",
+    name: "Sarah Geronimo",
+    context: "Singer | Universal Robina",
+    imageUrl: "public/images/collaborators/sarah-geronimo.jpg",
   },
 ];
