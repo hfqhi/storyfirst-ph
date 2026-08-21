@@ -4,11 +4,13 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import ProjectsGallery from "./components/ProjectsGallery";
-// import Founder from "./components/Founder"; // Commented out for now
-// import Partnerships from "./components/Partnerships"; // Commented out for now
+// import Awards from "./components/Awards";
+// import Clients from "./components/Clients";
+// import Advocacies from "./components/Advocacies";
+// import Testimonials from "./components/Testimonials";
+// import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 import paperTexture from "./assets/paper-texture.png";
 
 export default function App() {
@@ -34,7 +36,6 @@ export default function App() {
           backgroundPosition: "center",
         }}
       />
-
       <div className="relative z-10">
         <Navbar isDark={isDark} toggleTheme={toggleTheme} />
         <main>
@@ -42,7 +43,11 @@ export default function App() {
           <About />
           <Services />
           <ProjectsGallery />
-          {/* We will add <Awards />, <Clients />, and <Team /> here next! */}
+          {/* <Awards /> */}
+          {/* <Clients /> */}
+          {/* <Advocacies /> */}
+          {/* <Testimonials /> */}
+          {/* <Team /> */}
           <Contact />
         </main>
         <Footer />
