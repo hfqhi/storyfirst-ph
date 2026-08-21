@@ -6,7 +6,7 @@ import Services from "./components/Services";
 import ProjectsGallery from "./components/ProjectsGallery";
 import Awards from "./components/Awards";
 import Clients from "./components/Clients";
-// import Advocacies from "./components/Advocacies";
+import Advocacies from "./components/Advocacies";
 // import Testimonials from "./components/Testimonials";
 // import Team from "./components/Team";
 import Contact from "./components/Contact";
@@ -45,7 +45,7 @@ export default function App() {
           <ProjectsGallery />
           <Awards />
           <Clients />
-          {/* <Advocacies /> */}
+          <Advocacies />
           {/* <Testimonials /> */}
           {/* <Team /> */}
           <Contact />
