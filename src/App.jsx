@@ -7,7 +7,7 @@ import ProjectsGallery from "./components/ProjectsGallery";
 import Awards from "./components/Awards";
 import Clients from "./components/Clients";
 import Advocacies from "./components/Advocacies";
-// import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonials";
 // import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -46,7 +46,7 @@ export default function App() {
           <Awards />
           <Clients />
           <Advocacies />
-          {/* <Testimonials /> */}
+          <Testimonials />
           {/* <Team /> */}
           <Contact />
         </main>
