@@ -8,7 +8,7 @@ import Awards from "./components/Awards";
 import Clients from "./components/Clients";
 import Advocacies from "./components/Advocacies";
 import Testimonials from "./components/Testimonials";
-// import Team from "./components/Team";
+import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import paperTexture from "./assets/paper-texture.png";
@@ -47,7 +47,7 @@ export default function App() {
           <Clients />
           <Advocacies />
           <Testimonials />
-          {/* <Team /> */}
+          <Team />
           <Contact />
         </main>
         <Footer />

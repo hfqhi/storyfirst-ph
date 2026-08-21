@@ -1,32 +1,5 @@
 import React, { useState } from "react";
-
-// Using local data to immediately match the brief's exact wording
-const servicesData = [
-  {
-    id: 1,
-    title: "01 — Documentary Production",
-    description:
-      "Research, development, field production, local producing, documentary production, journalism, international productions, and production support.",
-    visualType: "image",
-    mediaUrl: "01.jpg",
-  },
-  {
-    id: 2,
-    title: "02 — Content Creation",
-    description:
-      "Branded content, digital campaigns, social media content, short-form videos, video production, storytelling, and communications consultancy.",
-    visualType: "image",
-    mediaUrl: "02.jpg",
-  },
-  {
-    id: 3,
-    title: "03 — Public Speaking & Workshops",
-    description:
-      "Keynotes, journalism workshops, storytelling workshops, media training, documentary production workshops, hosting, moderation, and facilitation.",
-    visualType: "image",
-    mediaUrl: "03.jpg",
-  },
-];
+import { servicesData } from "../data/portfolioData";
 
 export default function Services() {
   const [hoveredService, setHoveredService] = useState(null);
