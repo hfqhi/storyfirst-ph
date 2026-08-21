@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import ProjectsGallery from "./components/ProjectsGallery";
-// import Awards from "./components/Awards";
+import Awards from "./components/Awards";
 // import Clients from "./components/Clients";
 // import Advocacies from "./components/Advocacies";
 // import Testimonials from "./components/Testimonials";
@@ -43,7 +43,7 @@ export default function App() {
           <About />
           <Services />
           <ProjectsGallery />
-          {/* <Awards /> */}
+          <Awards />
           {/* <Clients /> */}
           {/* <Advocacies /> */}
           {/* <Testimonials /> */}
